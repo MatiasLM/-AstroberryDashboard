@@ -1,1 +1,3872 @@
-[]
+[
+    {
+        "id": "c3d0a05c4b8ac63b",
+        "type": "tab",
+        "label": "AstroberryDashbord",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d416c5ded7cb052a",
+        "type": "subflow",
+        "name": "Bolean2Color",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "deb0c7475fc3f383"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 520,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "9cea0653c19a2d94",
+                        "port": 0
+                    },
+                    {
+                        "id": "073e29f9f7715e5d",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "6f8de54df6cd955e",
+        "type": "subflow",
+        "name": "ServiceStatus2Color",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "06ce349d38ae0fb1"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 680,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "6bd23e7fef049a75",
+                        "port": 0
+                    },
+                    {
+                        "id": "2ef6a64b03c5380f",
+                        "port": 0
+                    },
+                    {
+                        "id": "dd6dbf1f33a4edf8",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "95b974680d37559d",
+        "type": "group",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "Shutdown/Restart",
+        "style": {
+            "label": true,
+            "label-position": "ne",
+            "color": "#0070c0",
+            "stroke": "#bfdbef"
+        },
+        "nodes": [
+            "66835c040d095a57",
+            "381f287b0c116dd1",
+            "94046c76a98453bb",
+            "c6fc67cedabb81e1",
+            "d9ed37d5a131e44b",
+            "018555d80f7d9547",
+            "f80a396570eea3e7",
+            "3bc1537c3343d03d",
+            "322cb3fcd96bc97f",
+            "23359a0e7d26a17a"
+        ],
+        "x": 314,
+        "y": 2119,
+        "w": 872,
+        "h": 209.5
+    },
+    {
+        "id": "0e37023efcbf72ea",
+        "type": "group",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "USB Ports on/off control",
+        "style": {
+            "label": true,
+            "label-position": "ne",
+            "color": "#0070c0",
+            "stroke": "#bfdbef"
+        },
+        "nodes": [
+            "809ff76332e60902",
+            "bc4ee72d9ea3eeb2",
+            "4714e3f8365a3998",
+            "9549275c967ed354",
+            "ce88c0d2843e1937",
+            "749b1bde6fd5d087",
+            "5eb722e260f4dbcd",
+            "1a30acad9dbacdce",
+            "5e21ab325222cbad"
+        ],
+        "x": 434,
+        "y": 59,
+        "w": 892,
+        "h": 222
+    },
+    {
+        "id": "dd58ce969e67d540",
+        "type": "group",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "Services Status",
+        "style": {
+            "stroke": "#bfdbef",
+            "label": true,
+            "color": "#0070c0",
+            "label-position": "ne"
+        },
+        "nodes": [
+            "fe5372f303fa604a",
+            "240fc2d3e0a531f7",
+            "30f966ec2654a554",
+            "5c2886610e6dcb5b",
+            "28c7d6ebe1777e21",
+            "47a765adc5c64c36",
+            "8ae8e696f617db7f",
+            "7129ce6efe76c059",
+            "d36fae1a893353e9",
+            "197cb9b.8e143c6",
+            "afaff6f163a93172",
+            "8b893bf55aadf0cd",
+            "73f96bdfd6bf2001",
+            "1d1a4683346d1330",
+            "64b429fa1a6090df",
+            "45541c0e8414df34",
+            "b01d11ea346fbc33",
+            "5b36c5d7ae125be7",
+            "f3f89f7d4944a6d0",
+            "8c5b73beae0f8635",
+            "8987de8dd2f6971d",
+            "f2b9274e2a9753b2",
+            "363421d6a6bca4f0",
+            "d8155a210c5b5ee5",
+            "8cad4154fd6db174",
+            "82bb1b577eae217f",
+            "1ca71b9b62474d08",
+            "dd970d65baf53498",
+            "d2ca99734617f54c",
+            "e16078f9845b2831",
+            "19d070a7c9639995",
+            "50dd314327a98595",
+            "0b8eb85bf7e9df47",
+            "f6bdc669c2df0890",
+            "ae16ec0d3c79e99a",
+            "4d3c476cdb95a78e",
+            "f209bb1b08e62012",
+            "f618fc6e4483aa32",
+            "c90b59cf309e0592",
+            "46c067b4bfbea2ef",
+            "4cbf840a773b6bb3",
+            "96509b9d3ada750c",
+            "aa49fd66441ef27f",
+            "51a525695456c427",
+            "7057564d87d94034",
+            "71977de1f37158fc",
+            "3e167881504e8340",
+            "92c5e3fa4f50146c",
+            "4063f26110fbf95a",
+            "6b019ecb0106a13a"
+        ],
+        "x": 34,
+        "y": 1179,
+        "w": 1312,
+        "h": 902
+    },
+    {
+        "id": "b4a6a6c3a53a77d7",
+        "type": "group",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "RPI HW Status",
+        "style": {
+            "label": true,
+            "label-position": "ne",
+            "color": "#0070c0",
+            "stroke": "#bfdbef"
+        },
+        "nodes": [
+            "1c3f7fe12a2ba1e7",
+            "55d1b52a235d7341",
+            "fb0f8b3c3c8c17b8",
+            "6baf012dbd349ffa",
+            "56233ae84f10daf0",
+            "3058792756a1672f",
+            "1fdcfc8e6fdb9f47",
+            "63d4541c8f54a896",
+            "0b3896d9c56ef449",
+            "e366b32be923b872",
+            "b3677c663fbd788c",
+            "f8689d910efecba1",
+            "0f6a861353c3f518",
+            "ab0853541c81f84d",
+            "c51e3e7efac88c8c",
+            "d95fa273ff312e24",
+            "e5c65f6b088c9f92",
+            "dcc9d2c1d79cc8b6",
+            "afe6a6cdd586999d",
+            "5936acbffefeb250",
+            "fddae9636299c91b",
+            "e487daebdcfdd0ce",
+            "0ccb130ecfa7347e",
+            "e2f4255f592cb59a",
+            "3d431458d41269c9",
+            "b8354dfd954e446b",
+            "0516f918c4b7af85",
+            "6c990431f2d66e88",
+            "be7254a3a36954f3",
+            "bb7353c2ce699c2b",
+            "e9e6cc6795c71e46",
+            "154fb0483eb5f50c",
+            "251d1d863f5e2703",
+            "86fc17e03564067e",
+            "f3a93ef62d4ccad0",
+            "b0020c5e54929191",
+            "3ec0405384601c6b",
+            "e70c5a3209af48c2",
+            "e3619f424091ed7e",
+            "67ed8398eeda1a0c",
+            "7d06f07bb8eb094b",
+            "db47153659f7ce19",
+            "b0e9ec154e6a3731",
+            "ea157bdc7135cead",
+            "2c764d0ea6eef61f"
+        ],
+        "x": 214,
+        "y": 299,
+        "w": 1052,
+        "h": 862
+    },
+    {
+        "id": "a5537dcfc6be6786",
+        "type": "ui_tab",
+        "name": "Astroberry Dashboard",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "53d27990b94a973f",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "Courier,monospace",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Courier,monospace"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Astroberry Dashboad",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "false",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "6582a58bf553f8ed",
+        "type": "ui_group",
+        "name": "System Status",
+        "tab": "a5537dcfc6be6786",
+        "order": 1,
+        "disp": true,
+        "width": 16,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d90693ead75ad9b6",
+        "type": "ui_group",
+        "name": "RPI Control",
+        "tab": "a5537dcfc6be6786",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4ecf9821bb10075e",
+        "type": "ui_group",
+        "name": "Services Status",
+        "tab": "a5537dcfc6be6786",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e3e99604c9ca91e8",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1190f87466706603",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "23a6072234598e84",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c2c8bca9b80e812c",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "929afc55cf552efd",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0daaab4c2e208583",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d8ac22d24006f8c0",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "62b25d0892606cf7",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "35c6c457c3118006",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "cffd2f032b8f6508",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "649175f4991ee77e",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 18,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2eb56e7e5ad8c01f",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 19,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "37eac2625578a49e",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 20,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9826c716714e89c1",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 21,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c3588042da9b883e",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 22,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0ac0024bdb8b5e7d",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 23,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ee8f348e5e1c806a",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 25,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3aff4eea026699be",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 27,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1a7a20eb8613dc60",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 28,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b01f7a6437597c8f",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 29,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "14246db7bf930fa0",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 30,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "86c3e47eb859afb6",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 31,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0e432a2c68f476d2",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 32,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9e2556b7806a3652",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 34,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "f6e1df15cb2e6b23",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 35,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "30c6ae489087a896",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 37,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c631c8de8263ca48",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 42,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9eafdd8f63c6e3d6",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 43,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9f62557565ba2f8c",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 44,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9d68413e6742549c",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 45,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e1aa5ba4de404e7b",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 50,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "cdaa79a9e5cbabdf",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 51,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a1ee940aa26e0f82",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 52,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fb9f2507855b8d65",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 53,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "61b9ab87ace73f0f",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "4ecf9821bb10075e",
+        "order": 10,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "491b74e91c2610fe",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "4ecf9821bb10075e",
+        "order": 11,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "ba7221ccd29890ba",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "d90693ead75ad9b6",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "20b0bbb81dcb9295",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "d90693ead75ad9b6",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f438a4e334ee1a63",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "d90693ead75ad9b6",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9243d3f035ee5619",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "d90693ead75ad9b6",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0af32d52ab521ff9",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "d90693ead75ad9b6",
+        "order": 10,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "6a84bcf620b09001",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "d90693ead75ad9b6",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "73bae20e4e4bfc14",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "d90693ead75ad9b6",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "deb0c7475fc3f383",
+        "type": "switch",
+        "z": "d416c5ded7cb052a",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 190,
+        "y": 100,
+        "wires": [
+            [
+                "9cea0653c19a2d94"
+            ],
+            [
+                "073e29f9f7715e5d"
+            ]
+        ]
+    },
+    {
+        "id": "9cea0653c19a2d94",
+        "type": "change",
+        "z": "d416c5ded7cb052a",
+        "name": "False --> Green",
+        "rules": [
+            {
+                "t": "set",
+                "p": "className",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "073e29f9f7715e5d",
+        "type": "change",
+        "z": "d416c5ded7cb052a",
+        "name": "True --> Red",
+        "rules": [
+            {
+                "t": "set",
+                "p": "className",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c7b709c00b6d09d",
+        "type": "switch",
+        "z": "6f8de54df6cd955e",
+        "name": "",
+        "property": "payload.status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Active",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Inactive",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 290,
+        "y": 120,
+        "wires": [
+            [
+                "6bd23e7fef049a75"
+            ],
+            [
+                "2ef6a64b03c5380f"
+            ],
+            [
+                "dd6dbf1f33a4edf8"
+            ]
+        ]
+    },
+    {
+        "id": "6bd23e7fef049a75",
+        "type": "change",
+        "z": "6f8de54df6cd955e",
+        "name": "Active --> Green",
+        "rules": [
+            {
+                "t": "set",
+                "p": "className",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2ef6a64b03c5380f",
+        "type": "change",
+        "z": "6f8de54df6cd955e",
+        "name": "Inctive --> Red",
+        "rules": [
+            {
+                "t": "set",
+                "p": "className",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd6dbf1f33a4edf8",
+        "type": "change",
+        "z": "6f8de54df6cd955e",
+        "name": "Otherwise --> Orange",
+        "rules": [
+            {
+                "t": "set",
+                "p": "className",
+                "pt": "msg",
+                "to": "orange",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "06ce349d38ae0fb1",
+        "type": "function",
+        "z": "6f8de54df6cd955e",
+        "name": "Capitalize",
+        "func": "var string = msg.payload.status\nstring = string.replace('\\n', '');\nmsg.payload.status = string.charAt(0).toUpperCase() + string.slice(1)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "1c7b709c00b6d09d"
+            ]
+        ]
+    },
+    {
+        "id": "4add2c3a51956911",
+        "type": "inject",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 120,
+        "wires": [
+            [
+                "5869c4c9173fac39",
+                "c86ce3cbad674b30"
+            ]
+        ]
+    },
+    {
+        "id": "66835c040d095a57",
+        "type": "ui_button",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "95b974680d37559d",
+        "name": "Shutwdon",
+        "group": "d90693ead75ad9b6",
+        "order": 14,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "",
+        "tooltip": "Shutwdon",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-power-off fa-2x",
+        "payload": "Shutdown. <br> Are You Sure?",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 400,
+        "y": 2280,
+        "wires": [
+            [
+                "23359a0e7d26a17a"
+            ]
+        ],
+        "info": "https://fontawesome.com/v4.7/icons/\n\nAlternativa de icono de \"materials.io\" power_settings_new\n\nhttps://material.io/icons/\n\nPero ojo porque no todos los free están disponibles en nodered.\n\n----------------------------\nVersión anterior, payload = -h\n"
+    },
+    {
+        "id": "381f287b0c116dd1",
+        "type": "ui_button",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "95b974680d37559d",
+        "name": "Restart",
+        "group": "d90693ead75ad9b6",
+        "order": 13,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "",
+        "tooltip": "Restart",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-repeat fa-2x",
+        "payload": "Restart. <br> Are You Sure?",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 400,
+        "y": 2220,
+        "wires": [
+            [
+                "c6fc67cedabb81e1"
+            ]
+        ],
+        "info": "https://fontawesome.com/v4.7/icons/\n\n----------------------------\nVersión anterior, payload = -r"
+    },
+    {
+        "id": "94046c76a98453bb",
+        "type": "exec",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "95b974680d37559d",
+        "command": "sudo shutdown -r",
+        "addpay": "",
+        "append": "now",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Restart",
+        "x": 1100,
+        "y": 2220,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "53420e20f1529ec3",
+        "type": "ui_template",
+        "z": "c3d0a05c4b8ac63b",
+        "group": "6582a58bf553f8ed",
+        "name": "Backgrond Color",
+        "order": 56,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n.nr-dashboard-text.red{\n    background-color: red;\n}\n.nr-dashboard-text.orange{\n    background-color: orange;\n}\n.nr-dashboard-text.green{\n    background-color: green;\n}\n.nr-dashboard-text.wite{\n    background-color: #ffffff;\n}\n.nr-dashboard-text.grey{\n    background-color: grey;\n}\n.nr-dashboard-text.greyback{\n    background-color: #605c5c;\n}\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "global",
+        "className": "",
+        "x": 450,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c6fc67cedabb81e1",
+        "type": "ui_toast",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "95b974680d37559d",
+        "position": "dialog",
+        "displayTime": "5",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "Ok",
+        "cancel": "Cancel",
+        "raw": true,
+        "className": "",
+        "topic": "",
+        "name": "Are You Sure?",
+        "x": 780,
+        "y": 2220,
+        "wires": [
+            [
+                "d9ed37d5a131e44b"
+            ]
+        ]
+    },
+    {
+        "id": "d9ed37d5a131e44b",
+        "type": "switch",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "95b974680d37559d",
+        "name": "If Ok",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Ok",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 950,
+        "y": 2220,
+        "wires": [
+            [
+                "94046c76a98453bb"
+            ]
+        ]
+    },
+    {
+        "id": "6c0004a5d16e4aa9",
+        "type": "ui_template",
+        "z": "c3d0a05c4b8ac63b",
+        "group": "6582a58bf553f8ed",
+        "name": "Grouop Title Style",
+        "order": 54,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\np.nr-dashboard-cardtitle { \n    text-align: center;\n    font-weight: bold;\n    font-size:140%;\n}\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 230,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "809ff76332e60902",
+        "type": "ui_button",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "0e37023efcbf72ea",
+        "name": "",
+        "group": "d90693ead75ad9b6",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "label": "USB ON",
+        "tooltip": "USB Ports Power On",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "on",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 520,
+        "y": 100,
+        "wires": [
+            [
+                "4714e3f8365a3998"
+            ]
+        ]
+    },
+    {
+        "id": "bc4ee72d9ea3eeb2",
+        "type": "ui_button",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "0e37023efcbf72ea",
+        "name": "",
+        "group": "d90693ead75ad9b6",
+        "order": 4,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "USB OFF",
+        "tooltip": "USB Ports Power On",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "off",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 520,
+        "y": 140,
+        "wires": [
+            [
+                "4714e3f8365a3998"
+            ]
+        ]
+    },
+    {
+        "id": "4714e3f8365a3998",
+        "type": "exec",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "0e37023efcbf72ea",
+        "command": "uhubctl -l 2 -a",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 740,
+        "y": 120,
+        "wires": [
+            [
+                "9549275c967ed354"
+            ],
+            [],
+            []
+        ],
+        "info": "Send on/off command to uhubctl"
+    },
+    {
+        "id": "9549275c967ed354",
+        "type": "exec",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "0e37023efcbf72ea",
+        "command": "uhubctl | grep 'Port 2' | awk '{print $4}'",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "get_usb_status",
+        "x": 740,
+        "y": 220,
+        "wires": [
+            [
+                "5e21ab325222cbad"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ce88c0d2843e1937",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "0e37023efcbf72ea",
+        "group": "d90693ead75ad9b6",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "USB Status",
+        "label": "<h3>USB Ports Control",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "x": 990,
+        "y": 180,
+        "wires": [],
+        "info": "<h1> {{msg.payload | uppercase}} </h1>"
+    },
+    {
+        "id": "5869c4c9173fac39",
+        "type": "function",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "",
+        "func": "var date = new Date(msg.payload);\nvar date_str = date.toISOString().slice(0,10) + \" \" + date.toISOString().slice(11,-5);\nmsg.payload = date_str\nmsg.className = \"greyback\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 180,
+        "wires": [
+            [
+                "e04e0302c29fe8ea"
+            ]
+        ]
+    },
+    {
+        "id": "e04e0302c29fe8ea",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "group": "6582a58bf553f8ed",
+        "order": 2,
+        "width": 7,
+        "height": 1,
+        "name": "Date",
+        "label": "<p>Date:</p>",
+        "format": "<p>{{ msg.payload }}</p>",
+        "layout": "row-center",
+        "className": "",
+        "x": 210,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "fe5372f303fa604a",
+        "type": "exec",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "command": "systemctl status virtualhere.service | grep 'Active:' | awk {'print $2'}",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "get_virtualhere_status",
+        "x": 440,
+        "y": 1820,
+        "wires": [
+            [
+                "f3f89f7d4944a6d0"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "240fc2d3e0a531f7",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "group": "4ecf9821bb10075e",
+        "order": 8,
+        "width": 3,
+        "height": 1,
+        "name": "VirtualHere",
+        "label": "VirtualHere",
+        "format": "{{msg.payload.status}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1230,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "30f966ec2654a554",
+        "type": "exec",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "command": "pgrep indiserver",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "get_indiserver_status",
+        "x": 440,
+        "y": 1280,
+        "wires": [
+            [
+                "d36fae1a893353e9"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "5c2886610e6dcb5b",
+        "type": "switch",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "",
+        "property": "payload.status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 850,
+        "y": 1300,
+        "wires": [
+            [
+                "28c7d6ebe1777e21"
+            ],
+            [
+                "47a765adc5c64c36"
+            ]
+        ]
+    },
+    {
+        "id": "28c7d6ebe1777e21",
+        "type": "change",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "Active --> Green",
+        "rules": [
+            {
+                "t": "set",
+                "p": "className",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.status",
+                "pt": "msg",
+                "to": "Active",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1020,
+        "y": 1260,
+        "wires": [
+            [
+                "8ae8e696f617db7f"
+            ]
+        ]
+    },
+    {
+        "id": "47a765adc5c64c36",
+        "type": "change",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "Inctive --> Red",
+        "rules": [
+            {
+                "t": "set",
+                "p": "className",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.status",
+                "pt": "msg",
+                "to": "Inactive",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1020,
+        "y": 1300,
+        "wires": [
+            [
+                "8ae8e696f617db7f"
+            ]
+        ]
+    },
+    {
+        "id": "8ae8e696f617db7f",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "group": "4ecf9821bb10075e",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "name": "INDI Server",
+        "label": "<a href=\"{{msg.payload.url}}\"  target=\"_blank\" rel=\"noopener noreferrer\"> INDI Server </a>",
+        "format": "{{msg.payload.status}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1230,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "7129ce6efe76c059",
+        "type": "join",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 810,
+        "y": 1260,
+        "wires": [
+            [
+                "5c2886610e6dcb5b"
+            ]
+        ]
+    },
+    {
+        "id": "d36fae1a893353e9",
+        "type": "change",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "status",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 1280,
+        "wires": [
+            [
+                "7129ce6efe76c059"
+            ]
+        ]
+    },
+    {
+        "id": "197cb9b.8e143c6",
+        "type": "ui_template",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "group": "4ecf9821bb10075e",
+        "name": "Get UI URL",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "format": "<script>\n(function(scope) {\n    scope.send({payload: window.location.href});  \n})(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 130,
+        "y": 1320,
+        "wires": [
+            [
+                "8cad4154fd6db174"
+            ]
+        ],
+        "info": "La obteción de IP se planteó primero con un Exec con el comando \"hostname\"  y un change que eliminaba el \\n al final y hacia msg.topic = \"url\". pPro cuando la RP tiene dos interfacces conectadas esto devuelve un string con el formato \"xxx.xxx.xxx.xxx yyy.yyy.yyy.yyy \\n\" y por lo tanto el link en el indicador de la ui no funciona.\n\nLa solución fue obtener la IP a la que se acceder desde el navegador con este nodo \"template\". Además tiene la ventaja de que se ejecuta una única vez al inicio. Tambien fue necesario habilitar la opción \"and every subsequent message.\" en el join.\n\nhttps://discourse.nodered.org/t/how-to-get-address-of-the-browser-instance/51024"
+    },
+    {
+        "id": "afaff6f163a93172",
+        "type": "function",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "make_indi_web_mngr_url",
+        "func": "var ip = msg.payload\nconst port = \"8624\"\nmsg.payload = \"http://\" + ip + \":\" + port // INDI Web Manager URL\nmsg.topic = \"url\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 1220,
+        "wires": [
+            [
+                "7129ce6efe76c059"
+            ]
+        ]
+    },
+    {
+        "id": "8b893bf55aadf0cd",
+        "type": "ping",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "protocol": "Automatic",
+        "mode": "triggered",
+        "name": "",
+        "host": "192.168.0.111",
+        "timer": "20",
+        "inputs": 1,
+        "x": 410,
+        "y": 2020,
+        "wires": [
+            [
+                "73f96bdfd6bf2001"
+            ]
+        ]
+    },
+    {
+        "id": "73f96bdfd6bf2001",
+        "type": "switch",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 570,
+        "y": 2020,
+        "wires": [
+            [
+                "64b429fa1a6090df"
+            ],
+            [
+                "1d1a4683346d1330"
+            ]
+        ]
+    },
+    {
+        "id": "1d1a4683346d1330",
+        "type": "change",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "Number --> Green",
+        "rules": [
+            {
+                "t": "set",
+                "p": "className",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Active",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 2040,
+        "wires": [
+            [
+                "45541c0e8414df34"
+            ]
+        ]
+    },
+    {
+        "id": "64b429fa1a6090df",
+        "type": "change",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "False--> Red",
+        "rules": [
+            {
+                "t": "set",
+                "p": "className",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Inactive",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 2000,
+        "wires": [
+            [
+                "45541c0e8414df34"
+            ]
+        ]
+    },
+    {
+        "id": "45541c0e8414df34",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "group": "4ecf9821bb10075e",
+        "order": 9,
+        "width": 3,
+        "height": 1,
+        "name": "Camera ",
+        "label": "<a href=http://192.168.0.111/  target=\"_blank\" rel=\"noopener noreferrer\">Camera</a>",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 940,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "b01d11ea346fbc33",
+        "type": "exec",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "command": "systemctl status novnc.service | grep 'Active:' | awk {'print $2'}",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "get_novnc_status",
+        "x": 430,
+        "y": 1400,
+        "wires": [
+            [
+                "8c5b73beae0f8635"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "5b36c5d7ae125be7",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "group": "4ecf9821bb10075e",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "name": "noVNC",
+        "label": "<a href=\"{{msg.payload.url}}\"  target=\"_blank\" rel=\"noopener noreferrer\"\">noVNC</a>",
+        "format": "{{msg.payload.status}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1220,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "f3f89f7d4944a6d0",
+        "type": "change",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "status",
+                "tot": "str"
+            },
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.status",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 1820,
+        "wires": [
+            [
+                "363421d6a6bca4f0"
+            ]
+        ]
+    },
+    {
+        "id": "8c5b73beae0f8635",
+        "type": "change",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "status",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 1400,
+        "wires": [
+            [
+                "8987de8dd2f6971d"
+            ]
+        ]
+    },
+    {
+        "id": "8987de8dd2f6971d",
+        "type": "join",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 810,
+        "y": 1400,
+        "wires": [
+            [
+                "d8155a210c5b5ee5"
+            ]
+        ]
+    },
+    {
+        "id": "f2b9274e2a9753b2",
+        "type": "function",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "make_novnc_web_url",
+        "func": "var ip = msg.payload\n\nmsg.payload = \"http://\" + ip  // noVNC Web URL\nmsg.topic = \"url\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 1340,
+        "wires": [
+            [
+                "8987de8dd2f6971d"
+            ]
+        ]
+    },
+    {
+        "id": "363421d6a6bca4f0",
+        "type": "subflow:6f8de54df6cd955e",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "",
+        "x": 1020,
+        "y": 1820,
+        "wires": [
+            [
+                "240fc2d3e0a531f7"
+            ]
+        ]
+    },
+    {
+        "id": "d8155a210c5b5ee5",
+        "type": "subflow:6f8de54df6cd955e",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "",
+        "x": 1020,
+        "y": 1400,
+        "wires": [
+            [
+                "5b36c5d7ae125be7"
+            ]
+        ]
+    },
+    {
+        "id": "8cad4154fd6db174",
+        "type": "function",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "get_ip",
+        "func": "var url = msg.payload\nvar index1 = url.indexOf(\":\",0)\nvar index2 = url.indexOf(\":\", index1+1)\nmsg.payload = url.slice(index1+3,index2) //IP\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 170,
+        "y": 1380,
+        "wires": [
+            [
+                "afaff6f163a93172",
+                "f2b9274e2a9753b2",
+                "ae16ec0d3c79e99a",
+                "46c067b4bfbea2ef"
+            ]
+        ]
+    },
+    {
+        "id": "82bb1b577eae217f",
+        "type": "exec",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "command": "systemctl status virtualgps.service | grep 'Active:' | awk {'print $2'}",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "get_virtualgps_status",
+        "x": 440,
+        "y": 1760,
+        "wires": [
+            [
+                "d2ca99734617f54c"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "1ca71b9b62474d08",
+        "type": "subflow:6f8de54df6cd955e",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "",
+        "x": 1020,
+        "y": 1760,
+        "wires": [
+            [
+                "dd970d65baf53498"
+            ]
+        ]
+    },
+    {
+        "id": "dd970d65baf53498",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "group": "4ecf9821bb10075e",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "name": "Virtual GPS",
+        "label": "Virtual GPS",
+        "format": "{{msg.payload.status}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1230,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "d2ca99734617f54c",
+        "type": "change",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "status",
+                "tot": "str"
+            },
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.status",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 1760,
+        "wires": [
+            [
+                "1ca71b9b62474d08"
+            ]
+        ]
+    },
+    {
+        "id": "e16078f9845b2831",
+        "type": "exec",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "command": "systemctl status gpspanel.service | grep 'Active:' | awk {'print $2'}",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "get_gpspanel_status",
+        "x": 440,
+        "y": 1520,
+        "wires": [
+            [
+                "f6bdc669c2df0890"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "19d070a7c9639995",
+        "type": "subflow:6f8de54df6cd955e",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "",
+        "x": 1020,
+        "y": 1520,
+        "wires": [
+            [
+                "50dd314327a98595"
+            ]
+        ]
+    },
+    {
+        "id": "50dd314327a98595",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "group": "4ecf9821bb10075e",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "name": "GPS Panel",
+        "label": "<a href=\"{{msg.payload.url}}\"  target=\"_blank\" rel=\"noopener noreferrer\"\">GPS Panel</a>",
+        "format": "{{msg.payload.status}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1230,
+        "y": 1520,
+        "wires": [],
+        "info": "gpspannel \nsystemctl status gpspanel.service\nhttps://github.com/rkaczorek/gpspanel\nhttp://192.168.0.101:8625/"
+    },
+    {
+        "id": "0b8eb85bf7e9df47",
+        "type": "join",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 810,
+        "y": 1520,
+        "wires": [
+            [
+                "19d070a7c9639995"
+            ]
+        ]
+    },
+    {
+        "id": "f6bdc669c2df0890",
+        "type": "change",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "status",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 1520,
+        "wires": [
+            [
+                "0b8eb85bf7e9df47"
+            ]
+        ]
+    },
+    {
+        "id": "ae16ec0d3c79e99a",
+        "type": "function",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "make_gpspanel_web_url",
+        "func": "var ip = msg.payload\nconst port = \"8625\"\nmsg.payload = \"http://\" + ip + \":\" + port //\nmsg.topic = \"url\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 1460,
+        "wires": [
+            [
+                "0b8eb85bf7e9df47"
+            ]
+        ]
+    },
+    {
+        "id": "4d3c476cdb95a78e",
+        "type": "exec",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "command": "systemctl status astropanel.service | grep 'Active:' | awk {'print $2'}",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "get_astropanel_status",
+        "x": 440,
+        "y": 1640,
+        "wires": [
+            [
+                "c90b59cf309e0592"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f209bb1b08e62012",
+        "type": "subflow:6f8de54df6cd955e",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "",
+        "x": 1020,
+        "y": 1640,
+        "wires": [
+            [
+                "4cbf840a773b6bb3"
+            ]
+        ]
+    },
+    {
+        "id": "f618fc6e4483aa32",
+        "type": "join",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 810,
+        "y": 1640,
+        "wires": [
+            [
+                "f209bb1b08e62012"
+            ]
+        ]
+    },
+    {
+        "id": "c90b59cf309e0592",
+        "type": "change",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "status",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 1640,
+        "wires": [
+            [
+                "f618fc6e4483aa32"
+            ]
+        ]
+    },
+    {
+        "id": "46c067b4bfbea2ef",
+        "type": "function",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "make_astropanel_web_url",
+        "func": "var ip = msg.payload\nconst port = \"8626\"\nmsg.payload = \"http://\" + ip + \":\" + port //\nmsg.topic = \"url\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 1580,
+        "wires": [
+            [
+                "f618fc6e4483aa32"
+            ]
+        ]
+    },
+    {
+        "id": "4cbf840a773b6bb3",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "group": "4ecf9821bb10075e",
+        "order": 6,
+        "width": 3,
+        "height": 1,
+        "name": "AstroPanel",
+        "label": "<a href=\"{{msg.payload.url}}\"  target=\"_blank\" rel=\"noopener noreferrer\"\">AstroPanel</a>",
+        "format": "{{msg.payload.status}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1230,
+        "y": 1640,
+        "wires": [],
+        "info": "Astropanel\nsystemctl status astropanel.service\nhttp://192.168.0.101:8626/\n"
+    },
+    {
+        "id": "96509b9d3ada750c",
+        "type": "exec",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "command": "systemctl status gpsd | grep 'Active:' | awk {'print $2'}",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "get_gspd_status",
+        "x": 420,
+        "y": 1700,
+        "wires": [
+            [
+                "7057564d87d94034"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "aa49fd66441ef27f",
+        "type": "subflow:6f8de54df6cd955e",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "",
+        "x": 1020,
+        "y": 1700,
+        "wires": [
+            [
+                "51a525695456c427"
+            ]
+        ]
+    },
+    {
+        "id": "51a525695456c427",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "group": "4ecf9821bb10075e",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "name": "GPS Daemon",
+        "label": "GPS Daemon",
+        "format": "{{msg.payload.status}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1240,
+        "y": 1700,
+        "wires": [],
+        "info": "https://gpsd.gitlab.io/gpsd/"
+    },
+    {
+        "id": "7057564d87d94034",
+        "type": "change",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "status",
+                "tot": "str"
+            },
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.status",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 1700,
+        "wires": [
+            [
+                "aa49fd66441ef27f"
+            ]
+        ]
+    },
+    {
+        "id": "71977de1f37158fc",
+        "type": "link in",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "timestamp",
+        "links": [
+            "5f92485a01c2f43d",
+            "c86ce3cbad674b30"
+        ],
+        "x": 255,
+        "y": 1240,
+        "wires": [
+            [
+                "fe5372f303fa604a",
+                "30f966ec2654a554",
+                "8b893bf55aadf0cd",
+                "b01d11ea346fbc33",
+                "82bb1b577eae217f",
+                "e16078f9845b2831",
+                "4d3c476cdb95a78e",
+                "96509b9d3ada750c",
+                "3e167881504e8340"
+            ]
+        ]
+    },
+    {
+        "id": "3e167881504e8340",
+        "type": "exec",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "command": "systemctl status fancontrol.service | grep 'Active:' | awk {'print $2'}",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "get_virtualhere_status",
+        "x": 440,
+        "y": 1880,
+        "wires": [
+            [
+                "92c5e3fa4f50146c"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "92c5e3fa4f50146c",
+        "type": "change",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "status",
+                "tot": "str"
+            },
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.status",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 1880,
+        "wires": [
+            [
+                "4063f26110fbf95a"
+            ]
+        ]
+    },
+    {
+        "id": "4063f26110fbf95a",
+        "type": "subflow:6f8de54df6cd955e",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "name": "",
+        "x": 1020,
+        "y": 1880,
+        "wires": [
+            [
+                "6b019ecb0106a13a"
+            ]
+        ]
+    },
+    {
+        "id": "6b019ecb0106a13a",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "dd58ce969e67d540",
+        "group": "4ecf9821bb10075e",
+        "order": 7,
+        "width": 3,
+        "height": 1,
+        "name": "Fan Control",
+        "label": "Fan Control",
+        "format": "{{msg.payload.status}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1230,
+        "y": 1880,
+        "wires": []
+    },
+    {
+        "id": "37b339d7affb229b",
+        "type": "ui_template",
+        "z": "c3d0a05c4b8ac63b",
+        "group": "6582a58bf553f8ed",
+        "name": "Label Style",
+        "order": 55,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\np.label { \n    text-align: center;\n}\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 670,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "016b6c97056022ba",
+        "type": "ui_button",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "",
+        "group": "6582a58bf553f8ed",
+        "order": 1,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "",
+        "tooltip": "Refresh",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-refresh fa-2x",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 190,
+        "y": 80,
+        "wires": [
+            [
+                "c86ce3cbad674b30"
+            ]
+        ]
+    },
+    {
+        "id": "c86ce3cbad674b30",
+        "type": "link out",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "timestamp",
+        "mode": "link",
+        "links": [
+            "71977de1f37158fc",
+            "2c764d0ea6eef61f",
+            "749b1bde6fd5d087"
+        ],
+        "x": 335,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "749b1bde6fd5d087",
+        "type": "link in",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "0e37023efcbf72ea",
+        "name": "",
+        "links": [
+            "5f92485a01c2f43d",
+            "c86ce3cbad674b30"
+        ],
+        "x": 495,
+        "y": 220,
+        "wires": [
+            [
+                "9549275c967ed354"
+            ]
+        ]
+    },
+    {
+        "id": "1c3f7fe12a2ba1e7",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "group": "6582a58bf553f8ed",
+        "order": 33,
+        "width": 4,
+        "height": 1,
+        "name": "Fan Status",
+        "label": "<i class=\"fa fa-snowflake-o fa-2x\" title=\"Fan Status\"></i> ",
+        "format": "",
+        "layout": "row-center",
+        "className": "",
+        "x": 1070,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "55d1b52a235d7341",
+        "type": "exec",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "command": "gpio -g read 17",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "get_fan_status",
+        "x": 420,
+        "y": 680,
+        "wires": [
+            [
+                "ea157bdc7135cead"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "fb0f8b3c3c8c17b8",
+        "type": "ui_gauge",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "",
+        "group": "6582a58bf553f8ed",
+        "order": 24,
+        "width": 6,
+        "height": 3,
+        "gtype": "gage",
+        "title": "CPU Temperature",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "20",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "60",
+        "seg2": "80",
+        "className": "",
+        "x": 1090,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "6baf012dbd349ffa",
+        "type": "vcgencmd",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "get_temperature",
+        "fullPath": "/opt/vc/bin/vcgencmd",
+        "command": "measure_temp",
+        "codec": "H264",
+        "clock": "core",
+        "voltage": "core",
+        "memory": "arm",
+        "videoOutput": "0",
+        "separateMsg": false,
+        "x": 420,
+        "y": 740,
+        "wires": [
+            [
+                "fb0f8b3c3c8c17b8",
+                "d95fa273ff312e24"
+            ]
+        ],
+        "info": "https://flows.nodered.org/node/node-red-contrib-vcgencmd"
+    },
+    {
+        "id": "56233ae84f10daf0",
+        "type": "vcgencmd",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "",
+        "fullPath": "/opt/vc/bin/vcgencmd",
+        "command": "get_throttled",
+        "codec": "H264",
+        "clock": "core",
+        "voltage": "core",
+        "memory": "arm",
+        "videoOutput": "0",
+        "separateMsg": false,
+        "x": 420,
+        "y": 840,
+        "wires": [
+            [
+                "5936acbffefeb250",
+                "fddae9636299c91b",
+                "e487daebdcfdd0ce",
+                "0ccb130ecfa7347e",
+                "e2f4255f592cb59a",
+                "0516f918c4b7af85",
+                "3d431458d41269c9",
+                "b8354dfd954e446b"
+            ]
+        ],
+        "info": "https://flows.nodered.org/node/node-red-contrib-vcgencmd"
+    },
+    {
+        "id": "3058792756a1672f",
+        "type": "ui_gauge",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "",
+        "group": "6582a58bf553f8ed",
+        "order": 4,
+        "width": 6,
+        "height": 4,
+        "gtype": "donut",
+        "title": "CPU load",
+        "label": "%",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "60",
+        "seg2": "80",
+        "className": "",
+        "x": 900,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "1fdcfc8e6fdb9f47",
+        "type": "exec",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "command": "top -d 0.5 -b -n2 | grep Cpu | tail -1 | awk '{print 100-$8}'",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "cpu_load",
+        "x": 400,
+        "y": 420,
+        "wires": [
+            [
+                "3058792756a1672f",
+                "63d4541c8f54a896"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "63d4541c8f54a896",
+        "type": "ui_chart",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "",
+        "group": "6582a58bf553f8ed",
+        "order": 6,
+        "width": 8,
+        "height": 4,
+        "label": "CPU Load, %",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "bezier",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "3",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#0080ff",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 920,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0b3896d9c56ef449",
+        "type": "ui_gauge",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "",
+        "group": "6582a58bf553f8ed",
+        "order": 14,
+        "width": 6,
+        "height": 4,
+        "gtype": "donut",
+        "title": "RAM usage",
+        "label": "%",
+        "format": "{{msg.payload.memusage}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "60",
+        "seg2": "80",
+        "className": "",
+        "x": 910,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "e366b32be923b872",
+        "type": "ui_chart",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "",
+        "group": "6582a58bf553f8ed",
+        "order": 16,
+        "width": 8,
+        "height": 4,
+        "label": "RAM usage,  %",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "bezier",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "3",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 920,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b3677c663fbd788c",
+        "type": "function",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "extract_memory_usage",
+        "func": "msg.payload = msg.payload.memusage;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 540,
+        "wires": [
+            [
+                "e366b32be923b872"
+            ]
+        ]
+    },
+    {
+        "id": "f8689d910efecba1",
+        "type": "Memory",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "",
+        "x": 400,
+        "y": 500,
+        "wires": [
+            [
+                "0b3896d9c56ef449",
+                "b3677c663fbd788c"
+            ]
+        ]
+    },
+    {
+        "id": "0f6a861353c3f518",
+        "type": "ui_gauge",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "",
+        "group": "6582a58bf553f8ed",
+        "order": 36,
+        "width": 6,
+        "height": 4,
+        "gtype": "donut",
+        "title": "SD Used",
+        "label": "%",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "60",
+        "seg2": "80",
+        "className": "",
+        "x": 900,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "ab0853541c81f84d",
+        "type": "exec",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "command": "df -m | grep root",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "read_sd_usage",
+        "x": 420,
+        "y": 600,
+        "wires": [
+            [
+                "c51e3e7efac88c8c"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c51e3e7efac88c8c",
+        "type": "function",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "convert_sd_usage",
+        "func": "var msg1,msg2,msg3;\n\nl = msg.payload.split(/(\\s+)/).filter( function(e) { return e.trim().length > 0; } );\nmsg1 = {topic: 'Total', payload: Math.round(l[1] / 1000)};\nmsg2 = {topic: 'Free', payload: Math.round(l[3] / 1000)};\nmsg3 = {topic: 'Used%', payload: l[4].slice(0, -1)};\n\nreturn [msg1, msg2, msg3];",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 600,
+        "wires": [
+            [],
+            [],
+            [
+                "0f6a861353c3f518"
+            ]
+        ]
+    },
+    {
+        "id": "d95fa273ff312e24",
+        "type": "ui_chart",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "",
+        "group": "6582a58bf553f8ed",
+        "order": 26,
+        "width": 8,
+        "height": 4,
+        "label": "CPU Temperature, °C",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "bezier",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "3",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1100,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e5c65f6b088c9f92",
+        "type": "Uptime",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "Uptime",
+        "x": 400,
+        "y": 340,
+        "wires": [
+            [
+                "dcc9d2c1d79cc8b6"
+            ]
+        ]
+    },
+    {
+        "id": "dcc9d2c1d79cc8b6",
+        "type": "function",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "convert_uptime",
+        "func": "var d = Math.floor(msg.payload.uptime / 86400).toString();\nvar h = Math.floor((msg.payload.uptime % 86400) / 3600).toString().padStart(2, '0');\nvar m = Math.floor(((msg.payload.uptime % 86400) % 3600) / 60).toString().padStart(2, '0');\nvar s = Math.round(((msg.payload.uptime % 86400) % 3600) % 60).toString().padStart(2, '0');\nmsg.payload = d + ' ' + h + ':' + m + ':' + s;\nmsg.className = \"greyback\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 340,
+        "wires": [
+            [
+                "afe6a6cdd586999d"
+            ]
+        ]
+    },
+    {
+        "id": "afe6a6cdd586999d",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "group": "6582a58bf553f8ed",
+        "order": 3,
+        "width": 7,
+        "height": 1,
+        "name": "Uptime",
+        "label": "<p>Uptime [d HH:MM:SS]:</p>",
+        "format": "<p>{{ msg.payload }}</p>",
+        "layout": "row-center",
+        "className": "",
+        "x": 900,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "5936acbffefeb250",
+        "type": "change",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "underVoltage",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.underVoltage",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 840,
+        "wires": [
+            [
+                "be7254a3a36954f3"
+            ]
+        ],
+        "info": "Under-voltage occurs when voltage drops below 4.63V. In that case the Raspberry will be throttled.\r\n"
+    },
+    {
+        "id": "fddae9636299c91b",
+        "type": "change",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "frequencyCapped",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.frequencyCapped",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 880,
+        "wires": [
+            [
+                "3ec0405384601c6b"
+            ]
+        ],
+        "info": "The arm frequency capping occurs at temperatures above 80 degrees Celsius.\r\n"
+    },
+    {
+        "id": "e487daebdcfdd0ce",
+        "type": "change",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "throttled",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.throttled",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 920,
+        "wires": [
+            [
+                "e70c5a3209af48c2"
+            ]
+        ]
+    },
+    {
+        "id": "0ccb130ecfa7347e",
+        "type": "change",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "softTempLimit",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.softTempLimit",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 960,
+        "wires": [
+            [
+                "e3619f424091ed7e"
+            ]
+        ],
+        "info": "Over-temperature occurs at temperatures above 85 degrees Celsius. In that case the Raspberry will be throttled.\r\n"
+    },
+    {
+        "id": "e2f4255f592cb59a",
+        "type": "change",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "underVoltageOccurred",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.underVoltageOccurred",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 1000,
+        "wires": [
+            [
+                "67ed8398eeda1a0c"
+            ]
+        ]
+    },
+    {
+        "id": "3d431458d41269c9",
+        "type": "change",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "frequencyCappedOccurred",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.frequencyCappedOccurred",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 1040,
+        "wires": [
+            [
+                "7d06f07bb8eb094b"
+            ]
+        ]
+    },
+    {
+        "id": "b8354dfd954e446b",
+        "type": "change",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "throttledOccurred",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.throttledOccurred",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 1080,
+        "wires": [
+            [
+                "db47153659f7ce19"
+            ]
+        ]
+    },
+    {
+        "id": "0516f918c4b7af85",
+        "type": "change",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "softTempLimitOccurred",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.softTempLimitOccurred",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 1120,
+        "wires": [
+            [
+                "b0e9ec154e6a3731"
+            ]
+        ]
+    },
+    {
+        "id": "6c990431f2d66e88",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "group": "6582a58bf553f8ed",
+        "order": 38,
+        "width": 2,
+        "height": 2,
+        "name": "Under Voltage",
+        "label": "<div text-align:\"center\">Under Voltage",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "x": 1080,
+        "y": 840,
+        "wires": [],
+        "info": "Under-voltage occurs when voltage drops below 4.63V. In that case the Raspberry will be throttled.\r\n"
+    },
+    {
+        "id": "be7254a3a36954f3",
+        "type": "subflow:d416c5ded7cb052a",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "",
+        "x": 900,
+        "y": 840,
+        "wires": [
+            [
+                "6c990431f2d66e88"
+            ]
+        ]
+    },
+    {
+        "id": "bb7353c2ce699c2b",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "group": "6582a58bf553f8ed",
+        "order": 39,
+        "width": 2,
+        "height": 2,
+        "name": "Frequency Capped",
+        "label": "Freq. Capped",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "x": 1090,
+        "y": 880,
+        "wires": [],
+        "info": "The arm frequency capping occurs at temperatures above 80 degrees Celsius.\r\n"
+    },
+    {
+        "id": "e9e6cc6795c71e46",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "group": "6582a58bf553f8ed",
+        "order": 40,
+        "width": 2,
+        "height": 2,
+        "name": "Throttled",
+        "label": "Throttled",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "x": 1060,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "154fb0483eb5f50c",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "group": "6582a58bf553f8ed",
+        "order": 41,
+        "width": 2,
+        "height": 2,
+        "name": "Over Temperature",
+        "label": "Over Temp.",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "x": 1090,
+        "y": 960,
+        "wires": [],
+        "info": "Over-temperature occurs at temperatures above 85 degrees Celsius. In that case the Raspberry will be throttled.\r\n"
+    },
+    {
+        "id": "251d1d863f5e2703",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "group": "6582a58bf553f8ed",
+        "order": 46,
+        "width": 2,
+        "height": 2,
+        "name": "Under Voltage Ocurred",
+        "label": "Under Voltage Ocurred",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "x": 1100,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "86fc17e03564067e",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "group": "6582a58bf553f8ed",
+        "order": 47,
+        "width": 2,
+        "height": 2,
+        "name": "Frequency Capped Ocurred",
+        "label": "Freq. Capped Ocurred",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "x": 1120,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "f3a93ef62d4ccad0",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "group": "6582a58bf553f8ed",
+        "order": 48,
+        "width": 2,
+        "height": 2,
+        "name": "Throttled Ocurred",
+        "label": "Throttled Ocurred",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "x": 1090,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "b0020c5e54929191",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "group": "6582a58bf553f8ed",
+        "order": 49,
+        "width": 2,
+        "height": 2,
+        "name": "Over Temperature Ocurred",
+        "label": "Over Temp. Ocurred",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "x": 1120,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "3ec0405384601c6b",
+        "type": "subflow:d416c5ded7cb052a",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "",
+        "x": 900,
+        "y": 880,
+        "wires": [
+            [
+                "bb7353c2ce699c2b"
+            ]
+        ]
+    },
+    {
+        "id": "e70c5a3209af48c2",
+        "type": "subflow:d416c5ded7cb052a",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "",
+        "x": 900,
+        "y": 920,
+        "wires": [
+            [
+                "e9e6cc6795c71e46"
+            ]
+        ]
+    },
+    {
+        "id": "e3619f424091ed7e",
+        "type": "subflow:d416c5ded7cb052a",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "",
+        "x": 900,
+        "y": 960,
+        "wires": [
+            [
+                "154fb0483eb5f50c"
+            ]
+        ]
+    },
+    {
+        "id": "67ed8398eeda1a0c",
+        "type": "subflow:d416c5ded7cb052a",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "",
+        "x": 900,
+        "y": 1000,
+        "wires": [
+            [
+                "251d1d863f5e2703"
+            ]
+        ]
+    },
+    {
+        "id": "7d06f07bb8eb094b",
+        "type": "subflow:d416c5ded7cb052a",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "",
+        "x": 900,
+        "y": 1040,
+        "wires": [
+            [
+                "86fc17e03564067e"
+            ]
+        ]
+    },
+    {
+        "id": "db47153659f7ce19",
+        "type": "subflow:d416c5ded7cb052a",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "",
+        "x": 900,
+        "y": 1080,
+        "wires": [
+            [
+                "f3a93ef62d4ccad0"
+            ]
+        ]
+    },
+    {
+        "id": "b0e9ec154e6a3731",
+        "type": "subflow:d416c5ded7cb052a",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "",
+        "x": 900,
+        "y": 1120,
+        "wires": [
+            [
+                "b0020c5e54929191"
+            ]
+        ]
+    },
+    {
+        "id": "ea157bdc7135cead",
+        "type": "function",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "",
+        "func": "if      (msg.payload == \"1\\n\"){\n    msg.payload = \"On\"\n    msg.className = \"green\"\n}\nelse if (msg.payload == \"0\\n\"){\n    msg.payload = \"Off\"\n    msg.className = \"greyback\"\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 680,
+        "wires": [
+            [
+                "1c3f7fe12a2ba1e7"
+            ]
+        ]
+    },
+    {
+        "id": "2c764d0ea6eef61f",
+        "type": "link in",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "",
+        "links": [
+            "5f92485a01c2f43d",
+            "c86ce3cbad674b30"
+        ],
+        "x": 255,
+        "y": 340,
+        "wires": [
+            [
+                "55d1b52a235d7341",
+                "6baf012dbd349ffa",
+                "56233ae84f10daf0",
+                "1fdcfc8e6fdb9f47",
+                "f8689d910efecba1",
+                "ab0853541c81f84d",
+                "e5c65f6b088c9f92"
+            ]
+        ]
+    },
+    {
+        "id": "5eb722e260f4dbcd",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "0e37023efcbf72ea",
+        "group": "d90693ead75ad9b6",
+        "order": 7,
+        "width": 2,
+        "height": 1,
+        "name": "USB 2.0 Status",
+        "label": "<i class=\"fa fa-usb fa-lg\" title=\"USB 2.0 Ports Status\"></i>",
+        "format": "2.0",
+        "layout": "col-center",
+        "className": "",
+        "x": 1220,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "1a30acad9dbacdce",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "0e37023efcbf72ea",
+        "group": "d90693ead75ad9b6",
+        "order": 8,
+        "width": 2,
+        "height": 1,
+        "name": "USB 3.0 Status",
+        "label": "<i class=\"fa fa-usb fa-lg\" title=\"USB 3.0 Ports Status\"></i>",
+        "format": "3.0",
+        "layout": "col-center",
+        "className": "",
+        "x": 1220,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "5e21ab325222cbad",
+        "type": "function",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "0e37023efcbf72ea",
+        "name": "get_hubs_status",
+        "func": "var usb2 = {payload:\"\",topic:\"USB 2.0\",className: \"greyback\"};\nvar usb3 = {payload:\"\",topic:\"USB 3.0\",className: \"greyback\"};\nvar string = msg.payload\nconst index1 = string.indexOf(\"\\n\",0)\nusb3.payload = string.slice(0,index1)\nusb2.payload = string.slice(index1+1,-1)\n\nif(usb3.payload == \"power\"){usb3.className = \"green\"}\nif(usb2.payload == \"power\"){usb2.className = \"green\"}\n\nreturn [usb2, usb3]",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 220,
+        "wires": [
+            [
+                "5eb722e260f4dbcd"
+            ],
+            [
+                "1a30acad9dbacdce"
+            ]
+        ]
+    },
+    {
+        "id": "018555d80f7d9547",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "95b974680d37559d",
+        "group": "d90693ead75ad9b6",
+        "order": 11,
+        "width": 6,
+        "height": 1,
+        "name": "Raspberry Pi Power Off",
+        "label": "<h3>Raspberry Pi Power Off",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "x": 450,
+        "y": 2160,
+        "wires": [],
+        "info": "<h1> {{msg.payload | uppercase}} </h1>"
+    },
+    {
+        "id": "f80a396570eea3e7",
+        "type": "comment",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "95b974680d37559d",
+        "name": "",
+        "info": "",
+        "x": 770,
+        "y": 2160,
+        "wires": []
+    },
+    {
+        "id": "3bc1537c3343d03d",
+        "type": "exec",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "95b974680d37559d",
+        "command": "sudo shutdown -h",
+        "addpay": "",
+        "append": "now",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Shutdown",
+        "x": 1100,
+        "y": 2280,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "322cb3fcd96bc97f",
+        "type": "switch",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "95b974680d37559d",
+        "name": "If Ok",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Ok",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 950,
+        "y": 2280,
+        "wires": [
+            [
+                "3bc1537c3343d03d"
+            ]
+        ]
+    },
+    {
+        "id": "23359a0e7d26a17a",
+        "type": "ui_toast",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "95b974680d37559d",
+        "position": "dialog",
+        "displayTime": "5",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "Ok",
+        "cancel": "Cancel",
+        "raw": true,
+        "className": "",
+        "topic": "",
+        "name": "Are You Sure?",
+        "x": 780,
+        "y": 2280,
+        "wires": [
+            [
+                "322cb3fcd96bc97f"
+            ]
+        ]
+    }
+]
