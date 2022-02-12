@@ -103,7 +103,6 @@
             "c6fc67cedabb81e1",
             "d9ed37d5a131e44b",
             "018555d80f7d9547",
-            "f80a396570eea3e7",
             "3bc1537c3343d03d",
             "322cb3fcd96bc97f",
             "23359a0e7d26a17a"
@@ -133,7 +132,9 @@
             "749b1bde6fd5d087",
             "5eb722e260f4dbcd",
             "1a30acad9dbacdce",
-            "5e21ab325222cbad"
+            "5e21ab325222cbad",
+            "3360c8be098b52d2",
+            "9fe80ac855b6f0a5"
         ],
         "x": 434,
         "y": 59,
@@ -1274,7 +1275,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 520,
-        "y": 100,
+        "y": 160,
         "wires": [
             [
                 "4714e3f8365a3998"
@@ -1303,10 +1304,10 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 520,
-        "y": 140,
+        "y": 220,
         "wires": [
             [
-                "4714e3f8365a3998"
+                "9fe80ac855b6f0a5"
             ]
         ]
     },
@@ -1315,16 +1316,16 @@
         "type": "exec",
         "z": "c3d0a05c4b8ac63b",
         "g": "0e37023efcbf72ea",
-        "command": "uhubctl -l 2 -a",
-        "addpay": "payload",
+        "command": "uhubctl -l 2 -a on; sudo udevadm trigger --action=\"add\" /sys/bus/usb/devices/1-1",
+        "addpay": "",
         "append": "",
         "useSpawn": "false",
         "timer": "",
         "winHide": false,
         "oldrc": false,
-        "name": "",
-        "x": 740,
-        "y": 120,
+        "name": "USB Power on",
+        "x": 700,
+        "y": 160,
         "wires": [
             [
                 "9549275c967ed354"
@@ -1332,7 +1333,7 @@
             [],
             []
         ],
-        "info": "Send on/off command to uhubctl"
+        "info": "Send on/off command to uhubctl\n\n\n"
     },
     {
         "id": "9549275c967ed354",
@@ -1347,8 +1348,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "get_usb_status",
-        "x": 740,
-        "y": 220,
+        "x": 920,
+        "y": 160,
         "wires": [
             [
                 "5e21ab325222cbad"
@@ -1371,8 +1372,8 @@
         "format": "",
         "layout": "col-center",
         "className": "",
-        "x": 990,
-        "y": 180,
+        "x": 530,
+        "y": 100,
         "wires": [],
         "info": "<h1> {{msg.payload | uppercase}} </h1>"
     },
@@ -2674,8 +2675,8 @@
             "5f92485a01c2f43d",
             "c86ce3cbad674b30"
         ],
-        "x": 495,
-        "y": 220,
+        "x": 755,
+        "y": 100,
         "wires": [
             [
                 "9549275c967ed354"
@@ -3758,7 +3759,7 @@
         "finalize": "",
         "libs": [],
         "x": 1000,
-        "y": 220,
+        "y": 240,
         "wires": [
             [
                 "5eb722e260f4dbcd"
@@ -3786,17 +3787,6 @@
         "y": 2160,
         "wires": [],
         "info": "<h1> {{msg.payload | uppercase}} </h1>"
-    },
-    {
-        "id": "f80a396570eea3e7",
-        "type": "comment",
-        "z": "c3d0a05c4b8ac63b",
-        "g": "95b974680d37559d",
-        "name": "",
-        "info": "",
-        "x": 770,
-        "y": 2160,
-        "wires": []
     },
     {
         "id": "3bc1537c3343d03d",
@@ -3868,5 +3858,72 @@
                 "322cb3fcd96bc97f"
             ]
         ]
+    },
+    {
+        "id": "3360c8be098b52d2",
+        "type": "comment",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "0e37023efcbf72ea",
+        "name": "",
+        "info": "Desmontar USB\nsudo  udevadm trigger --action=remove /sys/bus/usb/devices/2-1; sudo  udevadm trigger --action=remove /sys/bus/usb/devices/2-2; sudo  udevadm trigger --action=remove /sys/bus/usb/devices/1-1\n\nMontar\nsudo udevadm trigger --action=\"add\" /sys/bus/usb/devices/1-1",
+        "x": 1220,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "9fe80ac855b6f0a5",
+        "type": "exec",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "0e37023efcbf72ea",
+        "command": "uhubctl -l 2 -a off; sudo  udevadm trigger --action=remove /sys/bus/usb/devices/2-1; sudo  udevadm trigger --action=remove /sys/bus/usb/devices/2-2; sudo  udevadm trigger --action=remove /sys/bus/usb/devices/1-1",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "USB Power Off",
+        "x": 700,
+        "y": 220,
+        "wires": [
+            [
+                "9549275c967ed354"
+            ],
+            [],
+            []
+        ],
+        "info": "Send on/off command to uhubctl"
+    },
+    {
+        "id": "8cc3f80677f7f24c",
+        "type": "catch",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 110,
+        "y": 320,
+        "wires": [
+            [
+                "fce712a4beee6390"
+            ]
+        ]
+    },
+    {
+        "id": "fce712a4beee6390",
+        "type": "debug",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 100,
+        "y": 440,
+        "wires": []
     }
 ]
