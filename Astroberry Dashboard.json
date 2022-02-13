@@ -107,9 +107,9 @@
             "322cb3fcd96bc97f",
             "23359a0e7d26a17a"
         ],
-        "x": 314,
-        "y": 2119,
-        "w": 872,
+        "x": 54,
+        "y": 2379,
+        "w": 612,
         "h": 209.5
     },
     {
@@ -133,13 +133,12 @@
             "5eb722e260f4dbcd",
             "1a30acad9dbacdce",
             "5e21ab325222cbad",
-            "3360c8be098b52d2",
             "9fe80ac855b6f0a5"
         ],
-        "x": 434,
-        "y": 59,
-        "w": 892,
-        "h": 222
+        "x": 54,
+        "y": 2119,
+        "w": 792,
+        "h": 209.5
     },
     {
         "id": "dd58ce969e67d540",
@@ -204,8 +203,8 @@
             "4063f26110fbf95a",
             "6b019ecb0106a13a"
         ],
-        "x": 34,
-        "y": 1179,
+        "x": 54,
+        "y": 1159,
         "w": 1312,
         "h": 902
     },
@@ -265,12 +264,58 @@
             "db47153659f7ce19",
             "b0e9ec154e6a3731",
             "ea157bdc7135cead",
-            "2c764d0ea6eef61f"
+            "2c764d0ea6eef61f",
+            "49444f4a31e2db92",
+            "d6df68fd6835f02d"
         ],
-        "x": 214,
-        "y": 299,
+        "x": 54,
+        "y": 239,
         "w": 1052,
         "h": 862
+    },
+    {
+        "id": "6a6e55e1024eee6f",
+        "type": "group",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "Styles",
+        "style": {
+            "stroke": "#bfdbef",
+            "label": true,
+            "color": "#0070c0",
+            "label-position": "ne"
+        },
+        "nodes": [
+            "53420e20f1529ec3",
+            "6c0004a5d16e4aa9",
+            "37b339d7affb229b"
+        ],
+        "x": 714,
+        "y": 19,
+        "w": 392,
+        "h": 122
+    },
+    {
+        "id": "1c6e9ee1d5cc4eb4",
+        "type": "group",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "Triggers",
+        "style": {
+            "label": true,
+            "stroke": "#bfdbef",
+            "label-position": "ne",
+            "color": "#0070c0"
+        },
+        "nodes": [
+            "4add2c3a51956911",
+            "5869c4c9173fac39",
+            "e04e0302c29fe8ea",
+            "016b6c97056022ba",
+            "c86ce3cbad674b30"
+        ],
+        "x": 54,
+        "y": 19,
+        "w": 492,
+        "h": 162
     },
     {
         "id": "a5537dcfc6be6786",
@@ -1058,6 +1103,7 @@
         "id": "4add2c3a51956911",
         "type": "inject",
         "z": "c3d0a05c4b8ac63b",
+        "g": "1c6e9ee1d5cc4eb4",
         "name": "",
         "props": [
             {
@@ -1071,8 +1117,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 210,
-        "y": 120,
+        "x": 170,
+        "y": 100,
         "wires": [
             [
                 "5869c4c9173fac39",
@@ -1101,8 +1147,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 400,
-        "y": 2280,
+        "x": 140,
+        "y": 2540,
         "wires": [
             [
                 "23359a0e7d26a17a"
@@ -1131,8 +1177,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 400,
-        "y": 2220,
+        "x": 140,
+        "y": 2480,
         "wires": [
             [
                 "c6fc67cedabb81e1"
@@ -1153,8 +1199,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "Restart",
-        "x": 1100,
-        "y": 2220,
+        "x": 580,
+        "y": 2480,
         "wires": [
             [],
             [],
@@ -1165,6 +1211,7 @@
         "id": "53420e20f1529ec3",
         "type": "ui_template",
         "z": "c3d0a05c4b8ac63b",
+        "g": "6a6e55e1024eee6f",
         "group": "6582a58bf553f8ed",
         "name": "Backgrond Color",
         "order": 56,
@@ -1176,8 +1223,8 @@
         "resendOnRefresh": false,
         "templateScope": "global",
         "className": "",
-        "x": 450,
-        "y": 20,
+        "x": 830,
+        "y": 100,
         "wires": [
             []
         ]
@@ -1198,8 +1245,8 @@
         "className": "",
         "topic": "",
         "name": "Are You Sure?",
-        "x": 780,
-        "y": 2220,
+        "x": 300,
+        "y": 2480,
         "wires": [
             [
                 "d9ed37d5a131e44b"
@@ -1224,8 +1271,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 950,
-        "y": 2220,
+        "x": 450,
+        "y": 2480,
         "wires": [
             [
                 "94046c76a98453bb"
@@ -1236,6 +1283,7 @@
         "id": "6c0004a5d16e4aa9",
         "type": "ui_template",
         "z": "c3d0a05c4b8ac63b",
+        "g": "6a6e55e1024eee6f",
         "group": "6582a58bf553f8ed",
         "name": "Grouop Title Style",
         "order": 54,
@@ -1247,8 +1295,8 @@
         "resendOnRefresh": true,
         "templateScope": "global",
         "className": "",
-        "x": 230,
-        "y": 20,
+        "x": 830,
+        "y": 60,
         "wires": [
             []
         ]
@@ -1274,8 +1322,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 520,
-        "y": 160,
+        "x": 140,
+        "y": 2220,
         "wires": [
             [
                 "4714e3f8365a3998"
@@ -1303,8 +1351,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 520,
-        "y": 220,
+        "x": 140,
+        "y": 2280,
         "wires": [
             [
                 "9fe80ac855b6f0a5"
@@ -1323,9 +1371,9 @@
         "timer": "",
         "winHide": false,
         "oldrc": false,
-        "name": "USB Power on",
-        "x": 700,
-        "y": 160,
+        "name": "USB Power On",
+        "x": 300,
+        "y": 2220,
         "wires": [
             [
                 "9549275c967ed354"
@@ -1348,8 +1396,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "get_usb_status",
-        "x": 920,
-        "y": 160,
+        "x": 520,
+        "y": 2280,
         "wires": [
             [
                 "5e21ab325222cbad"
@@ -1372,8 +1420,8 @@
         "format": "",
         "layout": "col-center",
         "className": "",
-        "x": 530,
-        "y": 100,
+        "x": 150,
+        "y": 2160,
         "wires": [],
         "info": "<h1> {{msg.payload | uppercase}} </h1>"
     },
@@ -1381,6 +1429,7 @@
         "id": "5869c4c9173fac39",
         "type": "function",
         "z": "c3d0a05c4b8ac63b",
+        "g": "1c6e9ee1d5cc4eb4",
         "name": "",
         "func": "var date = new Date(msg.payload);\nvar date_str = date.toISOString().slice(0,10) + \" \" + date.toISOString().slice(11,-5);\nmsg.payload = date_str\nmsg.className = \"greyback\"\nreturn msg;",
         "outputs": 1,
@@ -1388,8 +1437,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 200,
-        "y": 180,
+        "x": 420,
+        "y": 100,
         "wires": [
             [
                 "e04e0302c29fe8ea"
@@ -1400,6 +1449,7 @@
         "id": "e04e0302c29fe8ea",
         "type": "ui_text",
         "z": "c3d0a05c4b8ac63b",
+        "g": "1c6e9ee1d5cc4eb4",
         "group": "6582a58bf553f8ed",
         "order": 2,
         "width": 7,
@@ -1409,8 +1459,8 @@
         "format": "<p>{{ msg.payload }}</p>",
         "layout": "row-center",
         "className": "",
-        "x": 210,
-        "y": 240,
+        "x": 430,
+        "y": 140,
         "wires": []
     },
     {
@@ -1426,8 +1476,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "get_virtualhere_status",
-        "x": 440,
-        "y": 1820,
+        "x": 460,
+        "y": 1800,
         "wires": [
             [
                 "f3f89f7d4944a6d0"
@@ -1450,8 +1500,8 @@
         "format": "{{msg.payload.status}}",
         "layout": "col-center",
         "className": "",
-        "x": 1230,
-        "y": 1820,
+        "x": 1250,
+        "y": 1800,
         "wires": []
     },
     {
@@ -1467,8 +1517,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "get_indiserver_status",
-        "x": 440,
-        "y": 1280,
+        "x": 460,
+        "y": 1260,
         "wires": [
             [
                 "d36fae1a893353e9"
@@ -1496,8 +1546,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 850,
-        "y": 1300,
+        "x": 870,
+        "y": 1280,
         "wires": [
             [
                 "28c7d6ebe1777e21"
@@ -1534,8 +1584,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1020,
-        "y": 1260,
+        "x": 1040,
+        "y": 1240,
         "wires": [
             [
                 "8ae8e696f617db7f"
@@ -1569,8 +1619,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1020,
-        "y": 1300,
+        "x": 1040,
+        "y": 1280,
         "wires": [
             [
                 "8ae8e696f617db7f"
@@ -1591,8 +1641,8 @@
         "format": "{{msg.payload.status}}",
         "layout": "col-center",
         "className": "",
-        "x": 1230,
-        "y": 1280,
+        "x": 1250,
+        "y": 1260,
         "wires": []
     },
     {
@@ -1616,8 +1666,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 810,
-        "y": 1260,
+        "x": 830,
+        "y": 1240,
         "wires": [
             [
                 "5c2886610e6dcb5b"
@@ -1644,8 +1694,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 650,
-        "y": 1280,
+        "x": 670,
+        "y": 1260,
         "wires": [
             [
                 "7129ce6efe76c059"
@@ -1668,8 +1718,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 130,
-        "y": 1320,
+        "x": 150,
+        "y": 1300,
         "wires": [
             [
                 "8cad4154fd6db174"
@@ -1689,8 +1739,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 450,
-        "y": 1220,
+        "x": 470,
+        "y": 1200,
         "wires": [
             [
                 "7129ce6efe76c059"
@@ -1708,8 +1758,8 @@
         "host": "192.168.0.111",
         "timer": "20",
         "inputs": 1,
-        "x": 410,
-        "y": 2020,
+        "x": 430,
+        "y": 2000,
         "wires": [
             [
                 "73f96bdfd6bf2001"
@@ -1735,8 +1785,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 570,
-        "y": 2020,
+        "x": 590,
+        "y": 2000,
         "wires": [
             [
                 "64b429fa1a6090df"
@@ -1773,8 +1823,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
-        "y": 2040,
+        "x": 770,
+        "y": 2020,
         "wires": [
             [
                 "45541c0e8414df34"
@@ -1808,8 +1858,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 730,
-        "y": 2000,
+        "x": 750,
+        "y": 1980,
         "wires": [
             [
                 "45541c0e8414df34"
@@ -1830,8 +1880,8 @@
         "format": "{{msg.payload}}",
         "layout": "col-center",
         "className": "",
-        "x": 940,
-        "y": 2020,
+        "x": 960,
+        "y": 2000,
         "wires": []
     },
     {
@@ -1847,8 +1897,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "get_novnc_status",
-        "x": 430,
-        "y": 1400,
+        "x": 450,
+        "y": 1380,
         "wires": [
             [
                 "8c5b73beae0f8635"
@@ -1871,8 +1921,8 @@
         "format": "{{msg.payload.status}}",
         "layout": "col-center",
         "className": "",
-        "x": 1220,
-        "y": 1400,
+        "x": 1240,
+        "y": 1380,
         "wires": []
     },
     {
@@ -1902,8 +1952,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 660,
-        "y": 1820,
+        "x": 680,
+        "y": 1800,
         "wires": [
             [
                 "363421d6a6bca4f0"
@@ -1930,8 +1980,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 650,
-        "y": 1400,
+        "x": 670,
+        "y": 1380,
         "wires": [
             [
                 "8987de8dd2f6971d"
@@ -1959,8 +2009,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 810,
-        "y": 1400,
+        "x": 830,
+        "y": 1380,
         "wires": [
             [
                 "d8155a210c5b5ee5"
@@ -1979,8 +2029,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 440,
-        "y": 1340,
+        "x": 460,
+        "y": 1320,
         "wires": [
             [
                 "8987de8dd2f6971d"
@@ -1993,8 +2043,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "dd58ce969e67d540",
         "name": "",
-        "x": 1020,
-        "y": 1820,
+        "x": 1040,
+        "y": 1800,
         "wires": [
             [
                 "240fc2d3e0a531f7"
@@ -2007,8 +2057,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "dd58ce969e67d540",
         "name": "",
-        "x": 1020,
-        "y": 1400,
+        "x": 1040,
+        "y": 1380,
         "wires": [
             [
                 "5b36c5d7ae125be7"
@@ -2027,8 +2077,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 170,
-        "y": 1380,
+        "x": 190,
+        "y": 1360,
         "wires": [
             [
                 "afaff6f163a93172",
@@ -2051,8 +2101,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "get_virtualgps_status",
-        "x": 440,
-        "y": 1760,
+        "x": 460,
+        "y": 1740,
         "wires": [
             [
                 "d2ca99734617f54c"
@@ -2067,8 +2117,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "dd58ce969e67d540",
         "name": "",
-        "x": 1020,
-        "y": 1760,
+        "x": 1040,
+        "y": 1740,
         "wires": [
             [
                 "dd970d65baf53498"
@@ -2089,8 +2139,8 @@
         "format": "{{msg.payload.status}}",
         "layout": "col-center",
         "className": "",
-        "x": 1230,
-        "y": 1760,
+        "x": 1250,
+        "y": 1740,
         "wires": []
     },
     {
@@ -2120,8 +2170,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 660,
-        "y": 1760,
+        "x": 680,
+        "y": 1740,
         "wires": [
             [
                 "1ca71b9b62474d08"
@@ -2141,8 +2191,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "get_gpspanel_status",
-        "x": 440,
-        "y": 1520,
+        "x": 460,
+        "y": 1500,
         "wires": [
             [
                 "f6bdc669c2df0890"
@@ -2157,8 +2207,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "dd58ce969e67d540",
         "name": "",
-        "x": 1020,
-        "y": 1520,
+        "x": 1040,
+        "y": 1500,
         "wires": [
             [
                 "50dd314327a98595"
@@ -2179,8 +2229,8 @@
         "format": "{{msg.payload.status}}",
         "layout": "col-center",
         "className": "",
-        "x": 1230,
-        "y": 1520,
+        "x": 1250,
+        "y": 1500,
         "wires": [],
         "info": "gpspannel \nsystemctl status gpspanel.service\nhttps://github.com/rkaczorek/gpspanel\nhttp://192.168.0.101:8625/"
     },
@@ -2205,8 +2255,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 810,
-        "y": 1520,
+        "x": 830,
+        "y": 1500,
         "wires": [
             [
                 "19d070a7c9639995"
@@ -2233,8 +2283,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 650,
-        "y": 1520,
+        "x": 670,
+        "y": 1500,
         "wires": [
             [
                 "0b8eb85bf7e9df47"
@@ -2253,8 +2303,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 450,
-        "y": 1460,
+        "x": 470,
+        "y": 1440,
         "wires": [
             [
                 "0b8eb85bf7e9df47"
@@ -2274,8 +2324,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "get_astropanel_status",
-        "x": 440,
-        "y": 1640,
+        "x": 460,
+        "y": 1620,
         "wires": [
             [
                 "c90b59cf309e0592"
@@ -2290,8 +2340,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "dd58ce969e67d540",
         "name": "",
-        "x": 1020,
-        "y": 1640,
+        "x": 1040,
+        "y": 1620,
         "wires": [
             [
                 "4cbf840a773b6bb3"
@@ -2319,8 +2369,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 810,
-        "y": 1640,
+        "x": 830,
+        "y": 1620,
         "wires": [
             [
                 "f209bb1b08e62012"
@@ -2347,8 +2397,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 650,
-        "y": 1640,
+        "x": 670,
+        "y": 1620,
         "wires": [
             [
                 "f618fc6e4483aa32"
@@ -2367,8 +2417,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 1580,
+        "x": 480,
+        "y": 1560,
         "wires": [
             [
                 "f618fc6e4483aa32"
@@ -2389,8 +2439,8 @@
         "format": "{{msg.payload.status}}",
         "layout": "col-center",
         "className": "",
-        "x": 1230,
-        "y": 1640,
+        "x": 1250,
+        "y": 1620,
         "wires": [],
         "info": "Astropanel\nsystemctl status astropanel.service\nhttp://192.168.0.101:8626/\n"
     },
@@ -2407,8 +2457,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "get_gspd_status",
-        "x": 420,
-        "y": 1700,
+        "x": 440,
+        "y": 1680,
         "wires": [
             [
                 "7057564d87d94034"
@@ -2423,8 +2473,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "dd58ce969e67d540",
         "name": "",
-        "x": 1020,
-        "y": 1700,
+        "x": 1040,
+        "y": 1680,
         "wires": [
             [
                 "51a525695456c427"
@@ -2445,8 +2495,8 @@
         "format": "{{msg.payload.status}}",
         "layout": "col-center",
         "className": "",
-        "x": 1240,
-        "y": 1700,
+        "x": 1260,
+        "y": 1680,
         "wires": [],
         "info": "https://gpsd.gitlab.io/gpsd/"
     },
@@ -2477,8 +2527,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 660,
-        "y": 1700,
+        "x": 680,
+        "y": 1680,
         "wires": [
             [
                 "aa49fd66441ef27f"
@@ -2490,13 +2540,12 @@
         "type": "link in",
         "z": "c3d0a05c4b8ac63b",
         "g": "dd58ce969e67d540",
-        "name": "timestamp",
+        "name": "timestamp_in_sys-status",
         "links": [
-            "5f92485a01c2f43d",
             "c86ce3cbad674b30"
         ],
-        "x": 255,
-        "y": 1240,
+        "x": 275,
+        "y": 1220,
         "wires": [
             [
                 "fe5372f303fa604a",
@@ -2509,7 +2558,8 @@
                 "96509b9d3ada750c",
                 "3e167881504e8340"
             ]
-        ]
+        ],
+        "icon": "font-awesome/fa-clock-o"
     },
     {
         "id": "3e167881504e8340",
@@ -2524,8 +2574,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "get_virtualhere_status",
-        "x": 440,
-        "y": 1880,
+        "x": 460,
+        "y": 1860,
         "wires": [
             [
                 "92c5e3fa4f50146c"
@@ -2561,8 +2611,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 660,
-        "y": 1880,
+        "x": 680,
+        "y": 1860,
         "wires": [
             [
                 "4063f26110fbf95a"
@@ -2575,8 +2625,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "dd58ce969e67d540",
         "name": "",
-        "x": 1020,
-        "y": 1880,
+        "x": 1040,
+        "y": 1860,
         "wires": [
             [
                 "6b019ecb0106a13a"
@@ -2597,14 +2647,15 @@
         "format": "{{msg.payload.status}}",
         "layout": "col-center",
         "className": "",
-        "x": 1230,
-        "y": 1880,
+        "x": 1250,
+        "y": 1860,
         "wires": []
     },
     {
         "id": "37b339d7affb229b",
         "type": "ui_template",
         "z": "c3d0a05c4b8ac63b",
+        "g": "6a6e55e1024eee6f",
         "group": "6582a58bf553f8ed",
         "name": "Label Style",
         "order": 55,
@@ -2616,8 +2667,8 @@
         "resendOnRefresh": true,
         "templateScope": "global",
         "className": "",
-        "x": 670,
-        "y": 20,
+        "x": 1010,
+        "y": 60,
         "wires": [
             []
         ]
@@ -2626,6 +2677,7 @@
         "id": "016b6c97056022ba",
         "type": "ui_button",
         "z": "c3d0a05c4b8ac63b",
+        "g": "1c6e9ee1d5cc4eb4",
         "name": "",
         "group": "6582a58bf553f8ed",
         "order": 1,
@@ -2643,10 +2695,11 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 190,
-        "y": 80,
+        "y": 60,
         "wires": [
             [
-                "c86ce3cbad674b30"
+                "c86ce3cbad674b30",
+                "5869c4c9173fac39"
             ]
         ]
     },
@@ -2654,34 +2707,37 @@
         "id": "c86ce3cbad674b30",
         "type": "link out",
         "z": "c3d0a05c4b8ac63b",
-        "name": "timestamp",
+        "g": "1c6e9ee1d5cc4eb4",
+        "name": "timestamp_out",
         "mode": "link",
         "links": [
-            "71977de1f37158fc",
             "2c764d0ea6eef61f",
+            "71977de1f37158fc",
             "749b1bde6fd5d087"
         ],
-        "x": 335,
-        "y": 80,
-        "wires": []
+        "x": 440,
+        "y": 60,
+        "wires": [],
+        "icon": "font-awesome/fa-clock-o",
+        "l": true
     },
     {
         "id": "749b1bde6fd5d087",
         "type": "link in",
         "z": "c3d0a05c4b8ac63b",
         "g": "0e37023efcbf72ea",
-        "name": "",
+        "name": "timestamp_out_usb-status",
         "links": [
-            "5f92485a01c2f43d",
             "c86ce3cbad674b30"
         ],
-        "x": 755,
-        "y": 100,
+        "x": 375,
+        "y": 2160,
         "wires": [
             [
                 "9549275c967ed354"
             ]
-        ]
+        ],
+        "icon": "font-awesome/fa-clock-o"
     },
     {
         "id": "1c3f7fe12a2ba1e7",
@@ -2697,8 +2753,8 @@
         "format": "",
         "layout": "row-center",
         "className": "",
-        "x": 1070,
-        "y": 680,
+        "x": 910,
+        "y": 620,
         "wires": []
     },
     {
@@ -2714,8 +2770,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "get_fan_status",
-        "x": 420,
-        "y": 680,
+        "x": 260,
+        "y": 620,
         "wires": [
             [
                 "ea157bdc7135cead"
@@ -2748,8 +2804,8 @@
         "seg1": "60",
         "seg2": "80",
         "className": "",
-        "x": 1090,
-        "y": 740,
+        "x": 930,
+        "y": 680,
         "wires": []
     },
     {
@@ -2766,8 +2822,8 @@
         "memory": "arm",
         "videoOutput": "0",
         "separateMsg": false,
-        "x": 420,
-        "y": 740,
+        "x": 260,
+        "y": 680,
         "wires": [
             [
                 "fb0f8b3c3c8c17b8",
@@ -2790,8 +2846,8 @@
         "memory": "arm",
         "videoOutput": "0",
         "separateMsg": false,
-        "x": 420,
-        "y": 840,
+        "x": 260,
+        "y": 780,
         "wires": [
             [
                 "5936acbffefeb250",
@@ -2830,8 +2886,8 @@
         "seg1": "60",
         "seg2": "80",
         "className": "",
-        "x": 900,
-        "y": 400,
+        "x": 740,
+        "y": 340,
         "wires": []
     },
     {
@@ -2847,8 +2903,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "cpu_load",
-        "x": 400,
-        "y": 420,
+        "x": 240,
+        "y": 360,
         "wires": [
             [
                 "3058792756a1672f",
@@ -2897,8 +2953,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 920,
-        "y": 440,
+        "x": 760,
+        "y": 380,
         "wires": [
             []
         ]
@@ -2927,8 +2983,8 @@
         "seg1": "60",
         "seg2": "80",
         "className": "",
-        "x": 910,
-        "y": 500,
+        "x": 750,
+        "y": 440,
         "wires": []
     },
     {
@@ -2970,8 +3026,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 920,
-        "y": 540,
+        "x": 760,
+        "y": 480,
         "wires": [
             []
         ]
@@ -2988,8 +3044,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 670,
-        "y": 540,
+        "x": 510,
+        "y": 480,
         "wires": [
             [
                 "e366b32be923b872"
@@ -3002,8 +3058,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "name": "",
-        "x": 400,
-        "y": 500,
+        "x": 240,
+        "y": 440,
         "wires": [
             [
                 "0b3896d9c56ef449",
@@ -3035,8 +3091,8 @@
         "seg1": "60",
         "seg2": "80",
         "className": "",
-        "x": 900,
-        "y": 600,
+        "x": 740,
+        "y": 540,
         "wires": []
     },
     {
@@ -3051,8 +3107,8 @@
         "timer": "",
         "oldrc": false,
         "name": "read_sd_usage",
-        "x": 420,
-        "y": 600,
+        "x": 260,
+        "y": 540,
         "wires": [
             [
                 "c51e3e7efac88c8c"
@@ -3073,8 +3129,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 650,
-        "y": 600,
+        "x": 490,
+        "y": 540,
         "wires": [
             [],
             [],
@@ -3122,8 +3178,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1100,
-        "y": 780,
+        "x": 940,
+        "y": 720,
         "wires": [
             []
         ]
@@ -3134,8 +3190,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "name": "Uptime",
-        "x": 400,
-        "y": 340,
+        "x": 240,
+        "y": 280,
         "wires": [
             [
                 "dcc9d2c1d79cc8b6"
@@ -3154,8 +3210,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 640,
-        "y": 340,
+        "x": 480,
+        "y": 280,
         "wires": [
             [
                 "afe6a6cdd586999d"
@@ -3176,8 +3232,8 @@
         "format": "<p>{{ msg.payload }}</p>",
         "layout": "row-center",
         "className": "",
-        "x": 900,
-        "y": 340,
+        "x": 740,
+        "y": 280,
         "wires": []
     },
     {
@@ -3200,8 +3256,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 630,
-        "y": 840,
+        "x": 470,
+        "y": 780,
         "wires": [
             [
                 "be7254a3a36954f3"
@@ -3229,8 +3285,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 650,
-        "y": 880,
+        "x": 490,
+        "y": 820,
         "wires": [
             [
                 "3ec0405384601c6b"
@@ -3258,8 +3314,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 620,
-        "y": 920,
+        "x": 460,
+        "y": 860,
         "wires": [
             [
                 "e70c5a3209af48c2"
@@ -3286,8 +3342,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 640,
-        "y": 960,
+        "x": 480,
+        "y": 900,
         "wires": [
             [
                 "e3619f424091ed7e"
@@ -3315,8 +3371,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 660,
-        "y": 1000,
+        "x": 500,
+        "y": 940,
         "wires": [
             [
                 "67ed8398eeda1a0c"
@@ -3343,8 +3399,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 680,
-        "y": 1040,
+        "x": 520,
+        "y": 980,
         "wires": [
             [
                 "7d06f07bb8eb094b"
@@ -3371,8 +3427,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 650,
-        "y": 1080,
+        "x": 490,
+        "y": 1020,
         "wires": [
             [
                 "db47153659f7ce19"
@@ -3399,8 +3455,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 670,
-        "y": 1120,
+        "x": 510,
+        "y": 1060,
         "wires": [
             [
                 "b0e9ec154e6a3731"
@@ -3421,8 +3477,8 @@
         "format": "",
         "layout": "col-center",
         "className": "",
-        "x": 1080,
-        "y": 840,
+        "x": 920,
+        "y": 780,
         "wires": [],
         "info": "Under-voltage occurs when voltage drops below 4.63V. In that case the Raspberry will be throttled.\r\n"
     },
@@ -3432,8 +3488,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "name": "",
-        "x": 900,
-        "y": 840,
+        "x": 740,
+        "y": 780,
         "wires": [
             [
                 "6c990431f2d66e88"
@@ -3454,8 +3510,8 @@
         "format": "",
         "layout": "col-center",
         "className": "",
-        "x": 1090,
-        "y": 880,
+        "x": 930,
+        "y": 820,
         "wires": [],
         "info": "The arm frequency capping occurs at temperatures above 80 degrees Celsius.\r\n"
     },
@@ -3473,8 +3529,8 @@
         "format": "",
         "layout": "col-center",
         "className": "",
-        "x": 1060,
-        "y": 920,
+        "x": 900,
+        "y": 860,
         "wires": []
     },
     {
@@ -3491,8 +3547,8 @@
         "format": "",
         "layout": "col-center",
         "className": "",
-        "x": 1090,
-        "y": 960,
+        "x": 930,
+        "y": 900,
         "wires": [],
         "info": "Over-temperature occurs at temperatures above 85 degrees Celsius. In that case the Raspberry will be throttled.\r\n"
     },
@@ -3510,8 +3566,8 @@
         "format": "",
         "layout": "col-center",
         "className": "",
-        "x": 1100,
-        "y": 1000,
+        "x": 940,
+        "y": 940,
         "wires": []
     },
     {
@@ -3528,8 +3584,8 @@
         "format": "",
         "layout": "col-center",
         "className": "",
-        "x": 1120,
-        "y": 1040,
+        "x": 960,
+        "y": 980,
         "wires": []
     },
     {
@@ -3546,8 +3602,8 @@
         "format": "",
         "layout": "col-center",
         "className": "",
-        "x": 1090,
-        "y": 1080,
+        "x": 930,
+        "y": 1020,
         "wires": []
     },
     {
@@ -3564,8 +3620,8 @@
         "format": "",
         "layout": "col-center",
         "className": "",
-        "x": 1120,
-        "y": 1120,
+        "x": 960,
+        "y": 1060,
         "wires": []
     },
     {
@@ -3574,8 +3630,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "name": "",
-        "x": 900,
-        "y": 880,
+        "x": 740,
+        "y": 820,
         "wires": [
             [
                 "bb7353c2ce699c2b"
@@ -3588,8 +3644,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "name": "",
-        "x": 900,
-        "y": 920,
+        "x": 740,
+        "y": 860,
         "wires": [
             [
                 "e9e6cc6795c71e46"
@@ -3602,8 +3658,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "name": "",
-        "x": 900,
-        "y": 960,
+        "x": 740,
+        "y": 900,
         "wires": [
             [
                 "154fb0483eb5f50c"
@@ -3616,8 +3672,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "name": "",
-        "x": 900,
-        "y": 1000,
+        "x": 740,
+        "y": 940,
         "wires": [
             [
                 "251d1d863f5e2703"
@@ -3630,8 +3686,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "name": "",
-        "x": 900,
-        "y": 1040,
+        "x": 740,
+        "y": 980,
         "wires": [
             [
                 "86fc17e03564067e"
@@ -3644,8 +3700,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "name": "",
-        "x": 900,
-        "y": 1080,
+        "x": 740,
+        "y": 1020,
         "wires": [
             [
                 "f3a93ef62d4ccad0"
@@ -3658,8 +3714,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "name": "",
-        "x": 900,
-        "y": 1120,
+        "x": 740,
+        "y": 1060,
         "wires": [
             [
                 "b0020c5e54929191"
@@ -3678,8 +3734,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 640,
-        "y": 680,
+        "x": 480,
+        "y": 620,
         "wires": [
             [
                 "1c3f7fe12a2ba1e7"
@@ -3691,24 +3747,24 @@
         "type": "link in",
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
-        "name": "",
+        "name": "timestamp_in_hw-status",
         "links": [
-            "5f92485a01c2f43d",
             "c86ce3cbad674b30"
         ],
-        "x": 255,
-        "y": 340,
+        "x": 95,
+        "y": 280,
         "wires": [
             [
                 "55d1b52a235d7341",
                 "6baf012dbd349ffa",
-                "56233ae84f10daf0",
                 "1fdcfc8e6fdb9f47",
                 "f8689d910efecba1",
                 "ab0853541c81f84d",
-                "e5c65f6b088c9f92"
+                "e5c65f6b088c9f92",
+                "49444f4a31e2db92"
             ]
-        ]
+        ],
+        "icon": "font-awesome/fa-clock-o"
     },
     {
         "id": "5eb722e260f4dbcd",
@@ -3724,8 +3780,8 @@
         "format": "2.0",
         "layout": "col-center",
         "className": "",
-        "x": 1220,
-        "y": 200,
+        "x": 740,
+        "y": 2200,
         "wires": []
     },
     {
@@ -3742,8 +3798,8 @@
         "format": "3.0",
         "layout": "col-center",
         "className": "",
-        "x": 1220,
-        "y": 240,
+        "x": 740,
+        "y": 2240,
         "wires": []
     },
     {
@@ -3758,8 +3814,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1000,
-        "y": 240,
+        "x": 540,
+        "y": 2220,
         "wires": [
             [
                 "5eb722e260f4dbcd"
@@ -3783,8 +3839,8 @@
         "format": "",
         "layout": "col-center",
         "className": "",
-        "x": 450,
-        "y": 2160,
+        "x": 190,
+        "y": 2420,
         "wires": [],
         "info": "<h1> {{msg.payload | uppercase}} </h1>"
     },
@@ -3801,8 +3857,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "Shutdown",
-        "x": 1100,
-        "y": 2280,
+        "x": 580,
+        "y": 2540,
         "wires": [
             [],
             [],
@@ -3827,8 +3883,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 950,
-        "y": 2280,
+        "x": 450,
+        "y": 2540,
         "wires": [
             [
                 "3bc1537c3343d03d"
@@ -3851,24 +3907,13 @@
         "className": "",
         "topic": "",
         "name": "Are You Sure?",
-        "x": 780,
-        "y": 2280,
+        "x": 300,
+        "y": 2540,
         "wires": [
             [
                 "322cb3fcd96bc97f"
             ]
         ]
-    },
-    {
-        "id": "3360c8be098b52d2",
-        "type": "comment",
-        "z": "c3d0a05c4b8ac63b",
-        "g": "0e37023efcbf72ea",
-        "name": "",
-        "info": "Desmontar USB\nsudo  udevadm trigger --action=remove /sys/bus/usb/devices/2-1; sudo  udevadm trigger --action=remove /sys/bus/usb/devices/2-2; sudo  udevadm trigger --action=remove /sys/bus/usb/devices/1-1\n\nMontar\nsudo udevadm trigger --action=\"add\" /sys/bus/usb/devices/1-1",
-        "x": 1220,
-        "y": 140,
-        "wires": []
     },
     {
         "id": "9fe80ac855b6f0a5",
@@ -3883,8 +3928,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "USB Power Off",
-        "x": 700,
-        "y": 220,
+        "x": 300,
+        "y": 2280,
         "wires": [
             [
                 "9549275c967ed354"
@@ -3895,35 +3940,47 @@
         "info": "Send on/off command to uhubctl"
     },
     {
-        "id": "8cc3f80677f7f24c",
-        "type": "catch",
+        "id": "49444f4a31e2db92",
+        "type": "trigger",
         "z": "c3d0a05c4b8ac63b",
-        "name": "",
-        "scope": null,
-        "uncaught": false,
-        "x": 110,
-        "y": 320,
+        "g": "b4a6a6c3a53a77d7",
+        "name": "Trigger every 0.5 s",
+        "op1": "",
+        "op2": "0",
+        "op1type": "date",
+        "op2type": "str",
+        "duration": "-500",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 250,
+        "y": 740,
         "wires": [
             [
-                "fce712a4beee6390"
+                "56233ae84f10daf0",
+                "d6df68fd6835f02d"
             ]
         ]
     },
     {
-        "id": "fce712a4beee6390",
+        "id": "d6df68fd6835f02d",
         "type": "debug",
         "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
+        "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 100,
-        "y": 440,
+        "x": 460,
+        "y": 740,
         "wires": []
     }
 ]
