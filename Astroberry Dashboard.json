@@ -266,11 +266,12 @@
             "ea157bdc7135cead",
             "2c764d0ea6eef61f",
             "49444f4a31e2db92",
-            "d6df68fd6835f02d"
+            "d6df68fd6835f02d",
+            "1a364daab4d3f7ad"
         ],
         "x": 54,
         "y": 239,
-        "w": 1052,
+        "w": 1102,
         "h": 862
     },
     {
@@ -3981,6 +3982,17 @@
         "statusType": "auto",
         "x": 460,
         "y": 740,
+        "wires": []
+    },
+    {
+        "id": "1a364daab4d3f7ad",
+        "type": "comment",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "ToDo",
+        "info": "Analizar si no es merjor retener esta alarmas y agregar un reset o bien en lugar de las alarmas \"ocurred\" por defecto mostrar la retenidas con un reset.",
+        "x": 1080,
+        "y": 780,
         "wires": []
     }
 ]
