@@ -86,6 +86,39 @@
         "color": "#DDAA99"
     },
     {
+        "id": "557ad53c603ba1b5",
+        "type": "subflow",
+        "name": "Alarm Latch",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "47298724f4c6dc14"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 340,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "47298724f4c6dc14",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
         "id": "95b974680d37559d",
         "type": "group",
         "z": "c3d0a05c4b8ac63b",
@@ -108,7 +141,7 @@
             "23359a0e7d26a17a"
         ],
         "x": 54,
-        "y": 2379,
+        "y": 2819,
         "w": 612,
         "h": 209.5
     },
@@ -136,7 +169,7 @@
             "9fe80ac855b6f0a5"
         ],
         "x": 54,
-        "y": 2119,
+        "y": 2579,
         "w": 792,
         "h": 209.5
     },
@@ -204,9 +237,53 @@
             "6b019ecb0106a13a"
         ],
         "x": 54,
-        "y": 1159,
+        "y": 1659,
         "w": 1312,
         "h": 902
+    },
+    {
+        "id": "6a6e55e1024eee6f",
+        "type": "group",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "Styles",
+        "style": {
+            "stroke": "#bfdbef",
+            "label": true,
+            "color": "#0070c0",
+            "label-position": "ne"
+        },
+        "nodes": [
+            "53420e20f1529ec3",
+            "6c0004a5d16e4aa9",
+            "37b339d7affb229b"
+        ],
+        "x": 714,
+        "y": 19,
+        "w": 392,
+        "h": 122
+    },
+    {
+        "id": "1c6e9ee1d5cc4eb4",
+        "type": "group",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "Triggers",
+        "style": {
+            "label": true,
+            "stroke": "#bfdbef",
+            "label-position": "ne",
+            "color": "#0070c0"
+        },
+        "nodes": [
+            "4add2c3a51956911",
+            "5869c4c9173fac39",
+            "e04e0302c29fe8ea",
+            "016b6c97056022ba",
+            "c86ce3cbad674b30"
+        ],
+        "x": 54,
+        "y": 19,
+        "w": 492,
+        "h": 162
     },
     {
         "id": "b4a6a6c3a53a77d7",
@@ -267,56 +344,21 @@
             "2c764d0ea6eef61f",
             "49444f4a31e2db92",
             "d6df68fd6835f02d",
-            "1a364daab4d3f7ad"
+            "1a364daab4d3f7ad",
+            "c19399d8000af487",
+            "6d82860e3a6a5c49",
+            "3495c587de8fa044",
+            "0036fdeebe588a3f",
+            "8b34ce9a182ddaa1",
+            "9470ab257160ae2f",
+            "562abf43b576dcb5",
+            "bb07f097680a47a0",
+            "5117079514f68b3b"
         ],
-        "x": 54,
-        "y": 239,
-        "w": 1102,
-        "h": 862
-    },
-    {
-        "id": "6a6e55e1024eee6f",
-        "type": "group",
-        "z": "c3d0a05c4b8ac63b",
-        "name": "Styles",
-        "style": {
-            "stroke": "#bfdbef",
-            "label": true,
-            "color": "#0070c0",
-            "label-position": "ne"
-        },
-        "nodes": [
-            "53420e20f1529ec3",
-            "6c0004a5d16e4aa9",
-            "37b339d7affb229b"
-        ],
-        "x": 714,
-        "y": 19,
-        "w": 392,
-        "h": 122
-    },
-    {
-        "id": "1c6e9ee1d5cc4eb4",
-        "type": "group",
-        "z": "c3d0a05c4b8ac63b",
-        "name": "Triggers",
-        "style": {
-            "label": true,
-            "stroke": "#bfdbef",
-            "label-position": "ne",
-            "color": "#0070c0"
-        },
-        "nodes": [
-            "4add2c3a51956911",
-            "5869c4c9173fac39",
-            "e04e0302c29fe8ea",
-            "016b6c97056022ba",
-            "c86ce3cbad674b30"
-        ],
-        "x": 54,
-        "y": 19,
-        "w": 492,
-        "h": 162
+        "x": 94,
+        "y": 459,
+        "w": 1192,
+        "h": 1102
     },
     {
         "id": "a5537dcfc6be6786",
@@ -459,7 +501,7 @@
         "className": ""
     },
     {
-        "id": "e3e99604c9ca91e8",
+        "id": "80b8742d6ceb85db",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -469,7 +511,7 @@
         "height": 1
     },
     {
-        "id": "1190f87466706603",
+        "id": "c11470e846d93b7c",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -479,7 +521,7 @@
         "height": 1
     },
     {
-        "id": "23a6072234598e84",
+        "id": "3a8df115803ef4fe",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -489,7 +531,7 @@
         "height": 1
     },
     {
-        "id": "c2c8bca9b80e812c",
+        "id": "5d94e8a381ef753e",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -499,7 +541,7 @@
         "height": 1
     },
     {
-        "id": "929afc55cf552efd",
+        "id": "f152fc6d030eb7c7",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -509,7 +551,7 @@
         "height": 1
     },
     {
-        "id": "0daaab4c2e208583",
+        "id": "c2924f5cca17a3ed",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -519,7 +561,7 @@
         "height": 1
     },
     {
-        "id": "d8ac22d24006f8c0",
+        "id": "716112ca7697ad87",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -529,7 +571,7 @@
         "height": 1
     },
     {
-        "id": "62b25d0892606cf7",
+        "id": "bbef832ba1d97440",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -539,7 +581,7 @@
         "height": 1
     },
     {
-        "id": "35c6c457c3118006",
+        "id": "9f8bd4cb8aec3d4b",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -549,7 +591,7 @@
         "height": 1
     },
     {
-        "id": "cffd2f032b8f6508",
+        "id": "6cd28cc4817ccd50",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -559,7 +601,7 @@
         "height": 1
     },
     {
-        "id": "649175f4991ee77e",
+        "id": "7285934ffd835e4a",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -569,7 +611,7 @@
         "height": 1
     },
     {
-        "id": "2eb56e7e5ad8c01f",
+        "id": "3e993e0edb910ffd",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -579,7 +621,7 @@
         "height": 1
     },
     {
-        "id": "37eac2625578a49e",
+        "id": "5c1c8b7373a58aaa",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -589,7 +631,7 @@
         "height": 1
     },
     {
-        "id": "9826c716714e89c1",
+        "id": "1fd557cac6269c98",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -599,7 +641,7 @@
         "height": 1
     },
     {
-        "id": "c3588042da9b883e",
+        "id": "e9cf94842b5ccab2",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -609,7 +651,7 @@
         "height": 1
     },
     {
-        "id": "0ac0024bdb8b5e7d",
+        "id": "7970985a69268d7c",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -619,7 +661,7 @@
         "height": 1
     },
     {
-        "id": "ee8f348e5e1c806a",
+        "id": "11815c0fabef834c",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -629,7 +671,7 @@
         "height": 1
     },
     {
-        "id": "3aff4eea026699be",
+        "id": "cb13b403e90558dd",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -639,7 +681,7 @@
         "height": 1
     },
     {
-        "id": "1a7a20eb8613dc60",
+        "id": "b8f4b2249f663324",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -649,7 +691,7 @@
         "height": 1
     },
     {
-        "id": "b01f7a6437597c8f",
+        "id": "ff23735828942077",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -659,7 +701,7 @@
         "height": 1
     },
     {
-        "id": "14246db7bf930fa0",
+        "id": "20b2f130426e42ef",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -669,7 +711,7 @@
         "height": 1
     },
     {
-        "id": "86c3e47eb859afb6",
+        "id": "87003635a40129a7",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -679,7 +721,7 @@
         "height": 1
     },
     {
-        "id": "0e432a2c68f476d2",
+        "id": "96f41f50a15ef68c",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -689,7 +731,7 @@
         "height": 1
     },
     {
-        "id": "9e2556b7806a3652",
+        "id": "529d51a873dd1a53",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -699,7 +741,7 @@
         "height": 1
     },
     {
-        "id": "f6e1df15cb2e6b23",
+        "id": "cb02860a43b5c829",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -709,7 +751,7 @@
         "height": 1
     },
     {
-        "id": "30c6ae489087a896",
+        "id": "f116c85b3a947fc6",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -719,7 +761,7 @@
         "height": 1
     },
     {
-        "id": "c631c8de8263ca48",
+        "id": "1872f07c5f39c082",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -729,7 +771,7 @@
         "height": 1
     },
     {
-        "id": "9eafdd8f63c6e3d6",
+        "id": "facee0f4c5b969f5",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -739,7 +781,7 @@
         "height": 1
     },
     {
-        "id": "9f62557565ba2f8c",
+        "id": "ee32bc3ae8e662f3",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -749,7 +791,7 @@
         "height": 1
     },
     {
-        "id": "9d68413e6742549c",
+        "id": "d1c9fc01535d8dcb",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -759,7 +801,7 @@
         "height": 1
     },
     {
-        "id": "e1aa5ba4de404e7b",
+        "id": "a0f966e24df17e65",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -769,7 +811,7 @@
         "height": 1
     },
     {
-        "id": "cdaa79a9e5cbabdf",
+        "id": "3e7122ff55a6c40e",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -779,7 +821,7 @@
         "height": 1
     },
     {
-        "id": "a1ee940aa26e0f82",
+        "id": "f5346fa086e751b7",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -789,17 +831,67 @@
         "height": 1
     },
     {
-        "id": "fb9f2507855b8d65",
+        "id": "7e72ce231bcf5612",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
         "group": "6582a58bf553f8ed",
         "order": 53,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "2cee4e178b8eb318",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 58,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "66c995b06afe1a81",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 60,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3d9a5b5d4f859f38",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 61,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b2fa5da6296b2d50",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 62,
         "width": 16,
         "height": 1
     },
     {
-        "id": "61b9ab87ace73f0f",
+        "id": "a4f0c511472db197",
+        "type": "ui_spacer",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "spacer",
+        "group": "6582a58bf553f8ed",
+        "order": 63,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "dae95421f2f77d16",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -809,7 +901,7 @@
         "height": 1
     },
     {
-        "id": "491b74e91c2610fe",
+        "id": "cbd712dde578cf8f",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -819,7 +911,7 @@
         "height": 1
     },
     {
-        "id": "ba7221ccd29890ba",
+        "id": "e1bef258e69e55ef",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -829,7 +921,7 @@
         "height": 1
     },
     {
-        "id": "20b0bbb81dcb9295",
+        "id": "17ebd199646d5ef8",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -839,7 +931,7 @@
         "height": 1
     },
     {
-        "id": "f438a4e334ee1a63",
+        "id": "5aefc9d7778f2ad0",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -849,7 +941,7 @@
         "height": 1
     },
     {
-        "id": "9243d3f035ee5619",
+        "id": "2bde6c2ed0be1454",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -859,7 +951,7 @@
         "height": 1
     },
     {
-        "id": "0af32d52ab521ff9",
+        "id": "b94380560afedd83",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -869,7 +961,7 @@
         "height": 1
     },
     {
-        "id": "6a84bcf620b09001",
+        "id": "55af53752aa77998",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -879,7 +971,7 @@
         "height": 1
     },
     {
-        "id": "73bae20e4e4bfc14",
+        "id": "68bb0b3bc6462779",
         "type": "ui_spacer",
         "z": "c3d0a05c4b8ac63b",
         "name": "spacer",
@@ -1101,6 +1193,24 @@
         ]
     },
     {
+        "id": "47298724f4c6dc14",
+        "type": "function",
+        "z": "557ad53c603ba1b5",
+        "name": "",
+        "func": "const key = 'alarm_'+msg.topic\nvar oldStatus = global.get(key)\nvar currentStatus = msg.payload\nvar newStatus = false\n\nnewStatus = oldStatus || currentStatus\nglobal.set(key,newStatus);\n\n\nmsg.payload = global.get(key)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 80,
+        "wires": [
+            []
+        ],
+        "info": "if (msg.payload == \"reset\"){\n     global.set(key,false);\n}\nelse{\n    newStatus = oldStatus || msg.payload\n    global.set(key,newStatus);\n}\n\nmsg.payload = global.get(key)\nreturn msg;"
+    },
+    {
         "id": "4add2c3a51956911",
         "type": "inject",
         "z": "c3d0a05c4b8ac63b",
@@ -1149,7 +1259,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 140,
-        "y": 2540,
+        "y": 2980,
         "wires": [
             [
                 "23359a0e7d26a17a"
@@ -1179,7 +1289,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 140,
-        "y": 2480,
+        "y": 2920,
         "wires": [
             [
                 "c6fc67cedabb81e1"
@@ -1201,7 +1311,7 @@
         "oldrc": false,
         "name": "Restart",
         "x": 580,
-        "y": 2480,
+        "y": 2920,
         "wires": [
             [],
             [],
@@ -1215,7 +1325,7 @@
         "g": "6a6e55e1024eee6f",
         "group": "6582a58bf553f8ed",
         "name": "Backgrond Color",
-        "order": 56,
+        "order": 66,
         "width": 0,
         "height": 0,
         "format": "<style>\n.nr-dashboard-text.red{\n    background-color: red;\n}\n.nr-dashboard-text.orange{\n    background-color: orange;\n}\n.nr-dashboard-text.green{\n    background-color: green;\n}\n.nr-dashboard-text.wite{\n    background-color: #ffffff;\n}\n.nr-dashboard-text.grey{\n    background-color: grey;\n}\n.nr-dashboard-text.greyback{\n    background-color: #605c5c;\n}\n</style>",
@@ -1247,7 +1357,7 @@
         "topic": "",
         "name": "Are You Sure?",
         "x": 300,
-        "y": 2480,
+        "y": 2920,
         "wires": [
             [
                 "d9ed37d5a131e44b"
@@ -1273,7 +1383,7 @@
         "repair": false,
         "outputs": 1,
         "x": 450,
-        "y": 2480,
+        "y": 2920,
         "wires": [
             [
                 "94046c76a98453bb"
@@ -1287,7 +1397,7 @@
         "g": "6a6e55e1024eee6f",
         "group": "6582a58bf553f8ed",
         "name": "Grouop Title Style",
-        "order": 54,
+        "order": 64,
         "width": 0,
         "height": 0,
         "format": "<style>\np.nr-dashboard-cardtitle { \n    text-align: center;\n    font-weight: bold;\n    font-size:140%;\n}\n</style>",
@@ -1324,7 +1434,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 140,
-        "y": 2220,
+        "y": 2680,
         "wires": [
             [
                 "4714e3f8365a3998"
@@ -1353,7 +1463,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 140,
-        "y": 2280,
+        "y": 2740,
         "wires": [
             [
                 "9fe80ac855b6f0a5"
@@ -1374,7 +1484,7 @@
         "oldrc": false,
         "name": "USB Power On",
         "x": 300,
-        "y": 2220,
+        "y": 2680,
         "wires": [
             [
                 "9549275c967ed354"
@@ -1398,7 +1508,7 @@
         "oldrc": false,
         "name": "get_usb_status",
         "x": 520,
-        "y": 2280,
+        "y": 2740,
         "wires": [
             [
                 "5e21ab325222cbad"
@@ -1422,7 +1532,7 @@
         "layout": "col-center",
         "className": "",
         "x": 150,
-        "y": 2160,
+        "y": 2620,
         "wires": [],
         "info": "<h1> {{msg.payload | uppercase}} </h1>"
     },
@@ -1478,7 +1588,7 @@
         "oldrc": false,
         "name": "get_virtualhere_status",
         "x": 460,
-        "y": 1800,
+        "y": 2300,
         "wires": [
             [
                 "f3f89f7d4944a6d0"
@@ -1502,7 +1612,7 @@
         "layout": "col-center",
         "className": "",
         "x": 1250,
-        "y": 1800,
+        "y": 2300,
         "wires": []
     },
     {
@@ -1519,7 +1629,7 @@
         "oldrc": false,
         "name": "get_indiserver_status",
         "x": 460,
-        "y": 1260,
+        "y": 1760,
         "wires": [
             [
                 "d36fae1a893353e9"
@@ -1548,7 +1658,7 @@
         "repair": false,
         "outputs": 2,
         "x": 870,
-        "y": 1280,
+        "y": 1780,
         "wires": [
             [
                 "28c7d6ebe1777e21"
@@ -1586,7 +1696,7 @@
         "to": "",
         "reg": false,
         "x": 1040,
-        "y": 1240,
+        "y": 1740,
         "wires": [
             [
                 "8ae8e696f617db7f"
@@ -1621,7 +1731,7 @@
         "to": "",
         "reg": false,
         "x": 1040,
-        "y": 1280,
+        "y": 1780,
         "wires": [
             [
                 "8ae8e696f617db7f"
@@ -1643,7 +1753,7 @@
         "layout": "col-center",
         "className": "",
         "x": 1250,
-        "y": 1260,
+        "y": 1760,
         "wires": []
     },
     {
@@ -1668,7 +1778,7 @@
         "reduceInitType": "",
         "reduceFixup": "",
         "x": 830,
-        "y": 1240,
+        "y": 1740,
         "wires": [
             [
                 "5c2886610e6dcb5b"
@@ -1696,7 +1806,7 @@
         "to": "",
         "reg": false,
         "x": 670,
-        "y": 1260,
+        "y": 1760,
         "wires": [
             [
                 "7129ce6efe76c059"
@@ -1720,7 +1830,7 @@
         "templateScope": "local",
         "className": "",
         "x": 150,
-        "y": 1300,
+        "y": 1800,
         "wires": [
             [
                 "8cad4154fd6db174"
@@ -1741,7 +1851,7 @@
         "finalize": "",
         "libs": [],
         "x": 470,
-        "y": 1200,
+        "y": 1700,
         "wires": [
             [
                 "7129ce6efe76c059"
@@ -1760,7 +1870,7 @@
         "timer": "20",
         "inputs": 1,
         "x": 430,
-        "y": 2000,
+        "y": 2500,
         "wires": [
             [
                 "73f96bdfd6bf2001"
@@ -1787,7 +1897,7 @@
         "repair": false,
         "outputs": 2,
         "x": 590,
-        "y": 2000,
+        "y": 2500,
         "wires": [
             [
                 "64b429fa1a6090df"
@@ -1825,7 +1935,7 @@
         "to": "",
         "reg": false,
         "x": 770,
-        "y": 2020,
+        "y": 2520,
         "wires": [
             [
                 "45541c0e8414df34"
@@ -1860,7 +1970,7 @@
         "to": "",
         "reg": false,
         "x": 750,
-        "y": 1980,
+        "y": 2480,
         "wires": [
             [
                 "45541c0e8414df34"
@@ -1882,7 +1992,7 @@
         "layout": "col-center",
         "className": "",
         "x": 960,
-        "y": 2000,
+        "y": 2500,
         "wires": []
     },
     {
@@ -1899,7 +2009,7 @@
         "oldrc": false,
         "name": "get_novnc_status",
         "x": 450,
-        "y": 1380,
+        "y": 1880,
         "wires": [
             [
                 "8c5b73beae0f8635"
@@ -1923,7 +2033,7 @@
         "layout": "col-center",
         "className": "",
         "x": 1240,
-        "y": 1380,
+        "y": 1880,
         "wires": []
     },
     {
@@ -1954,7 +2064,7 @@
         "to": "",
         "reg": false,
         "x": 680,
-        "y": 1800,
+        "y": 2300,
         "wires": [
             [
                 "363421d6a6bca4f0"
@@ -1982,7 +2092,7 @@
         "to": "",
         "reg": false,
         "x": 670,
-        "y": 1380,
+        "y": 1880,
         "wires": [
             [
                 "8987de8dd2f6971d"
@@ -2011,7 +2121,7 @@
         "reduceInitType": "",
         "reduceFixup": "",
         "x": 830,
-        "y": 1380,
+        "y": 1880,
         "wires": [
             [
                 "d8155a210c5b5ee5"
@@ -2031,7 +2141,7 @@
         "finalize": "",
         "libs": [],
         "x": 460,
-        "y": 1320,
+        "y": 1820,
         "wires": [
             [
                 "8987de8dd2f6971d"
@@ -2045,7 +2155,7 @@
         "g": "dd58ce969e67d540",
         "name": "",
         "x": 1040,
-        "y": 1800,
+        "y": 2300,
         "wires": [
             [
                 "240fc2d3e0a531f7"
@@ -2059,7 +2169,7 @@
         "g": "dd58ce969e67d540",
         "name": "",
         "x": 1040,
-        "y": 1380,
+        "y": 1880,
         "wires": [
             [
                 "5b36c5d7ae125be7"
@@ -2079,7 +2189,7 @@
         "finalize": "",
         "libs": [],
         "x": 190,
-        "y": 1360,
+        "y": 1860,
         "wires": [
             [
                 "afaff6f163a93172",
@@ -2103,7 +2213,7 @@
         "oldrc": false,
         "name": "get_virtualgps_status",
         "x": 460,
-        "y": 1740,
+        "y": 2240,
         "wires": [
             [
                 "d2ca99734617f54c"
@@ -2119,7 +2229,7 @@
         "g": "dd58ce969e67d540",
         "name": "",
         "x": 1040,
-        "y": 1740,
+        "y": 2240,
         "wires": [
             [
                 "dd970d65baf53498"
@@ -2141,7 +2251,7 @@
         "layout": "col-center",
         "className": "",
         "x": 1250,
-        "y": 1740,
+        "y": 2240,
         "wires": []
     },
     {
@@ -2172,7 +2282,7 @@
         "to": "",
         "reg": false,
         "x": 680,
-        "y": 1740,
+        "y": 2240,
         "wires": [
             [
                 "1ca71b9b62474d08"
@@ -2193,7 +2303,7 @@
         "oldrc": false,
         "name": "get_gpspanel_status",
         "x": 460,
-        "y": 1500,
+        "y": 2000,
         "wires": [
             [
                 "f6bdc669c2df0890"
@@ -2209,7 +2319,7 @@
         "g": "dd58ce969e67d540",
         "name": "",
         "x": 1040,
-        "y": 1500,
+        "y": 2000,
         "wires": [
             [
                 "50dd314327a98595"
@@ -2231,7 +2341,7 @@
         "layout": "col-center",
         "className": "",
         "x": 1250,
-        "y": 1500,
+        "y": 2000,
         "wires": [],
         "info": "gpspannel \nsystemctl status gpspanel.service\nhttps://github.com/rkaczorek/gpspanel\nhttp://192.168.0.101:8625/"
     },
@@ -2257,7 +2367,7 @@
         "reduceInitType": "",
         "reduceFixup": "",
         "x": 830,
-        "y": 1500,
+        "y": 2000,
         "wires": [
             [
                 "19d070a7c9639995"
@@ -2285,7 +2395,7 @@
         "to": "",
         "reg": false,
         "x": 670,
-        "y": 1500,
+        "y": 2000,
         "wires": [
             [
                 "0b8eb85bf7e9df47"
@@ -2305,7 +2415,7 @@
         "finalize": "",
         "libs": [],
         "x": 470,
-        "y": 1440,
+        "y": 1940,
         "wires": [
             [
                 "0b8eb85bf7e9df47"
@@ -2326,7 +2436,7 @@
         "oldrc": false,
         "name": "get_astropanel_status",
         "x": 460,
-        "y": 1620,
+        "y": 2120,
         "wires": [
             [
                 "c90b59cf309e0592"
@@ -2342,7 +2452,7 @@
         "g": "dd58ce969e67d540",
         "name": "",
         "x": 1040,
-        "y": 1620,
+        "y": 2120,
         "wires": [
             [
                 "4cbf840a773b6bb3"
@@ -2371,7 +2481,7 @@
         "reduceInitType": "",
         "reduceFixup": "",
         "x": 830,
-        "y": 1620,
+        "y": 2120,
         "wires": [
             [
                 "f209bb1b08e62012"
@@ -2399,7 +2509,7 @@
         "to": "",
         "reg": false,
         "x": 670,
-        "y": 1620,
+        "y": 2120,
         "wires": [
             [
                 "f618fc6e4483aa32"
@@ -2419,7 +2529,7 @@
         "finalize": "",
         "libs": [],
         "x": 480,
-        "y": 1560,
+        "y": 2060,
         "wires": [
             [
                 "f618fc6e4483aa32"
@@ -2441,7 +2551,7 @@
         "layout": "col-center",
         "className": "",
         "x": 1250,
-        "y": 1620,
+        "y": 2120,
         "wires": [],
         "info": "Astropanel\nsystemctl status astropanel.service\nhttp://192.168.0.101:8626/\n"
     },
@@ -2459,7 +2569,7 @@
         "oldrc": false,
         "name": "get_gspd_status",
         "x": 440,
-        "y": 1680,
+        "y": 2180,
         "wires": [
             [
                 "7057564d87d94034"
@@ -2475,7 +2585,7 @@
         "g": "dd58ce969e67d540",
         "name": "",
         "x": 1040,
-        "y": 1680,
+        "y": 2180,
         "wires": [
             [
                 "51a525695456c427"
@@ -2497,7 +2607,7 @@
         "layout": "col-center",
         "className": "",
         "x": 1260,
-        "y": 1680,
+        "y": 2180,
         "wires": [],
         "info": "https://gpsd.gitlab.io/gpsd/"
     },
@@ -2529,7 +2639,7 @@
         "to": "",
         "reg": false,
         "x": 680,
-        "y": 1680,
+        "y": 2180,
         "wires": [
             [
                 "aa49fd66441ef27f"
@@ -2546,7 +2656,7 @@
             "c86ce3cbad674b30"
         ],
         "x": 275,
-        "y": 1220,
+        "y": 1720,
         "wires": [
             [
                 "fe5372f303fa604a",
@@ -2576,7 +2686,7 @@
         "oldrc": false,
         "name": "get_virtualhere_status",
         "x": 460,
-        "y": 1860,
+        "y": 2360,
         "wires": [
             [
                 "92c5e3fa4f50146c"
@@ -2613,7 +2723,7 @@
         "to": "",
         "reg": false,
         "x": 680,
-        "y": 1860,
+        "y": 2360,
         "wires": [
             [
                 "4063f26110fbf95a"
@@ -2627,7 +2737,7 @@
         "g": "dd58ce969e67d540",
         "name": "",
         "x": 1040,
-        "y": 1860,
+        "y": 2360,
         "wires": [
             [
                 "6b019ecb0106a13a"
@@ -2649,7 +2759,7 @@
         "layout": "col-center",
         "className": "",
         "x": 1250,
-        "y": 1860,
+        "y": 2360,
         "wires": []
     },
     {
@@ -2659,7 +2769,7 @@
         "g": "6a6e55e1024eee6f",
         "group": "6582a58bf553f8ed",
         "name": "Label Style",
-        "order": 55,
+        "order": 65,
         "width": 0,
         "height": 0,
         "format": "<style>\np.label { \n    text-align: center;\n}\n</style>",
@@ -2732,13 +2842,272 @@
             "c86ce3cbad674b30"
         ],
         "x": 375,
-        "y": 2160,
+        "y": 2620,
         "wires": [
             [
                 "9549275c967ed354"
             ]
         ],
         "icon": "font-awesome/fa-clock-o"
+    },
+    {
+        "id": "5eb722e260f4dbcd",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "0e37023efcbf72ea",
+        "group": "d90693ead75ad9b6",
+        "order": 7,
+        "width": 2,
+        "height": 1,
+        "name": "USB 2.0 Status",
+        "label": "<i class=\"fa fa-usb fa-lg\" title=\"USB 2.0 Ports Status\"></i>",
+        "format": "2.0",
+        "layout": "col-center",
+        "className": "",
+        "x": 740,
+        "y": 2660,
+        "wires": []
+    },
+    {
+        "id": "1a30acad9dbacdce",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "0e37023efcbf72ea",
+        "group": "d90693ead75ad9b6",
+        "order": 8,
+        "width": 2,
+        "height": 1,
+        "name": "USB 3.0 Status",
+        "label": "<i class=\"fa fa-usb fa-lg\" title=\"USB 3.0 Ports Status\"></i>",
+        "format": "3.0",
+        "layout": "col-center",
+        "className": "",
+        "x": 740,
+        "y": 2700,
+        "wires": []
+    },
+    {
+        "id": "5e21ab325222cbad",
+        "type": "function",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "0e37023efcbf72ea",
+        "name": "get_hubs_status",
+        "func": "var usb2 = {payload:\"\",topic:\"USB 2.0\",className: \"greyback\"};\nvar usb3 = {payload:\"\",topic:\"USB 3.0\",className: \"greyback\"};\nvar string = msg.payload\nconst index1 = string.indexOf(\"\\n\",0)\nusb3.payload = string.slice(0,index1)\nusb2.payload = string.slice(index1+1,-1)\n\nif(usb3.payload == \"power\"){usb3.className = \"green\"}\nif(usb2.payload == \"power\"){usb2.className = \"green\"}\n\nreturn [usb2, usb3]",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 2680,
+        "wires": [
+            [
+                "5eb722e260f4dbcd"
+            ],
+            [
+                "1a30acad9dbacdce"
+            ]
+        ]
+    },
+    {
+        "id": "018555d80f7d9547",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "95b974680d37559d",
+        "group": "d90693ead75ad9b6",
+        "order": 11,
+        "width": 6,
+        "height": 1,
+        "name": "Raspberry Pi Power Off",
+        "label": "<h3>Raspberry Pi Power Off",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "x": 190,
+        "y": 2860,
+        "wires": [],
+        "info": "<h1> {{msg.payload | uppercase}} </h1>"
+    },
+    {
+        "id": "3bc1537c3343d03d",
+        "type": "exec",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "95b974680d37559d",
+        "command": "sudo shutdown -h",
+        "addpay": "",
+        "append": "now",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Shutdown",
+        "x": 580,
+        "y": 2980,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "322cb3fcd96bc97f",
+        "type": "switch",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "95b974680d37559d",
+        "name": "If Ok",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Ok",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 450,
+        "y": 2980,
+        "wires": [
+            [
+                "3bc1537c3343d03d"
+            ]
+        ]
+    },
+    {
+        "id": "23359a0e7d26a17a",
+        "type": "ui_toast",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "95b974680d37559d",
+        "position": "dialog",
+        "displayTime": "5",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "Ok",
+        "cancel": "Cancel",
+        "raw": true,
+        "className": "",
+        "topic": "",
+        "name": "Are You Sure?",
+        "x": 300,
+        "y": 2980,
+        "wires": [
+            [
+                "322cb3fcd96bc97f"
+            ]
+        ]
+    },
+    {
+        "id": "9fe80ac855b6f0a5",
+        "type": "exec",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "0e37023efcbf72ea",
+        "command": "uhubctl -l 2 -a off; sudo  udevadm trigger --action=remove /sys/bus/usb/devices/2-1; sudo  udevadm trigger --action=remove /sys/bus/usb/devices/2-2; sudo  udevadm trigger --action=remove /sys/bus/usb/devices/1-1",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "USB Power Off",
+        "x": 300,
+        "y": 2740,
+        "wires": [
+            [
+                "9549275c967ed354"
+            ],
+            [],
+            []
+        ],
+        "info": "Send on/off command to uhubctl"
+    },
+    {
+        "id": "0b0014bcb1215fa7",
+        "type": "subflow:557ad53c603ba1b5",
+        "z": "c3d0a05c4b8ac63b",
+        "x": 590,
+        "y": 1120,
+        "wires": [
+            [
+                "e5611b2fcac4931a"
+            ]
+        ]
+    },
+    {
+        "id": "e5611b2fcac4931a",
+        "type": "subflow:d416c5ded7cb052a",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "",
+        "x": 780,
+        "y": 1120,
+        "wires": [
+            [
+                "a9ebd903024baf1f"
+            ]
+        ]
+    },
+    {
+        "id": "a9ebd903024baf1f",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "group": "6582a58bf553f8ed",
+        "order": 49,
+        "width": 2,
+        "height": 2,
+        "name": "Freq. Capped Latch",
+        "label": "Freq. Capped Latch",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "x": 980,
+        "y": 1120,
+        "wires": [],
+        "info": "Under-voltage occurs when voltage drops below 4.63V. In that case the Raspberry will be throttled.\r\n"
+    },
+    {
+        "id": "5f1f898ed52dec33",
+        "type": "subflow:557ad53c603ba1b5",
+        "z": "c3d0a05c4b8ac63b",
+        "x": 590,
+        "y": 1280,
+        "wires": [
+            [
+                "5c495ad12559b0c8"
+            ]
+        ]
+    },
+    {
+        "id": "5c495ad12559b0c8",
+        "type": "subflow:d416c5ded7cb052a",
+        "z": "c3d0a05c4b8ac63b",
+        "name": "",
+        "x": 780,
+        "y": 1280,
+        "wires": [
+            [
+                "014144147c512db4"
+            ]
+        ]
+    },
+    {
+        "id": "014144147c512db4",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "group": "6582a58bf553f8ed",
+        "order": 47,
+        "width": 2,
+        "height": 2,
+        "name": "Over Temp. Latch",
+        "label": "Over Temp. Latch",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "x": 970,
+        "y": 1280,
+        "wires": [],
+        "info": "Under-voltage occurs when voltage drops below 4.63V. In that case the Raspberry will be throttled.\r\n"
     },
     {
         "id": "1c3f7fe12a2ba1e7",
@@ -2754,8 +3123,8 @@
         "format": "",
         "layout": "row-center",
         "className": "",
-        "x": 910,
-        "y": 620,
+        "x": 950,
+        "y": 840,
         "wires": []
     },
     {
@@ -2771,8 +3140,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "get_fan_status",
-        "x": 260,
-        "y": 620,
+        "x": 300,
+        "y": 840,
         "wires": [
             [
                 "ea157bdc7135cead"
@@ -2805,8 +3174,8 @@
         "seg1": "60",
         "seg2": "80",
         "className": "",
-        "x": 930,
-        "y": 680,
+        "x": 970,
+        "y": 900,
         "wires": []
     },
     {
@@ -2823,8 +3192,8 @@
         "memory": "arm",
         "videoOutput": "0",
         "separateMsg": false,
-        "x": 260,
-        "y": 680,
+        "x": 300,
+        "y": 900,
         "wires": [
             [
                 "fb0f8b3c3c8c17b8",
@@ -2847,8 +3216,8 @@
         "memory": "arm",
         "videoOutput": "0",
         "separateMsg": false,
-        "x": 260,
-        "y": 780,
+        "x": 300,
+        "y": 1000,
         "wires": [
             [
                 "5936acbffefeb250",
@@ -2887,8 +3256,8 @@
         "seg1": "60",
         "seg2": "80",
         "className": "",
-        "x": 740,
-        "y": 340,
+        "x": 780,
+        "y": 560,
         "wires": []
     },
     {
@@ -2904,8 +3273,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "cpu_load",
-        "x": 240,
-        "y": 360,
+        "x": 280,
+        "y": 580,
         "wires": [
             [
                 "3058792756a1672f",
@@ -2954,8 +3323,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 760,
-        "y": 380,
+        "x": 800,
+        "y": 600,
         "wires": [
             []
         ]
@@ -2984,8 +3353,8 @@
         "seg1": "60",
         "seg2": "80",
         "className": "",
-        "x": 750,
-        "y": 440,
+        "x": 790,
+        "y": 660,
         "wires": []
     },
     {
@@ -3027,8 +3396,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 760,
-        "y": 480,
+        "x": 800,
+        "y": 700,
         "wires": [
             []
         ]
@@ -3045,8 +3414,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 510,
-        "y": 480,
+        "x": 550,
+        "y": 700,
         "wires": [
             [
                 "e366b32be923b872"
@@ -3059,8 +3428,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "name": "",
-        "x": 240,
-        "y": 440,
+        "x": 280,
+        "y": 660,
         "wires": [
             [
                 "0b3896d9c56ef449",
@@ -3092,8 +3461,8 @@
         "seg1": "60",
         "seg2": "80",
         "className": "",
-        "x": 740,
-        "y": 540,
+        "x": 780,
+        "y": 760,
         "wires": []
     },
     {
@@ -3108,8 +3477,8 @@
         "timer": "",
         "oldrc": false,
         "name": "read_sd_usage",
-        "x": 260,
-        "y": 540,
+        "x": 300,
+        "y": 760,
         "wires": [
             [
                 "c51e3e7efac88c8c"
@@ -3130,8 +3499,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 490,
-        "y": 540,
+        "x": 530,
+        "y": 760,
         "wires": [
             [],
             [],
@@ -3179,8 +3548,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 940,
-        "y": 720,
+        "x": 980,
+        "y": 940,
         "wires": [
             []
         ]
@@ -3191,8 +3560,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "name": "Uptime",
-        "x": 240,
-        "y": 280,
+        "x": 280,
+        "y": 500,
         "wires": [
             [
                 "dcc9d2c1d79cc8b6"
@@ -3211,8 +3580,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 480,
-        "y": 280,
+        "x": 520,
+        "y": 500,
         "wires": [
             [
                 "afe6a6cdd586999d"
@@ -3233,8 +3602,8 @@
         "format": "<p>{{ msg.payload }}</p>",
         "layout": "row-center",
         "className": "",
-        "x": 740,
-        "y": 280,
+        "x": 780,
+        "y": 500,
         "wires": []
     },
     {
@@ -3250,6 +3619,13 @@
                 "pt": "msg",
                 "to": "payload",
                 "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "underVoltage",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -3257,11 +3633,13 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 470,
-        "y": 780,
+        "x": 510,
+        "y": 1000,
         "wires": [
             [
-                "be7254a3a36954f3"
+                "be7254a3a36954f3",
+                "8b34ce9a182ddaa1",
+                "5117079514f68b3b"
             ]
         ],
         "info": "Under-voltage occurs when voltage drops below 4.63V. In that case the Raspberry will be throttled.\r\n"
@@ -3279,6 +3657,13 @@
                 "pt": "msg",
                 "to": "payload",
                 "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "frequencyCapped",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -3286,11 +3671,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 490,
-        "y": 820,
+        "x": 530,
+        "y": 1080,
         "wires": [
             [
-                "3ec0405384601c6b"
+                "3ec0405384601c6b",
+                "0b0014bcb1215fa7"
             ]
         ],
         "info": "The arm frequency capping occurs at temperatures above 80 degrees Celsius.\r\n"
@@ -3308,6 +3694,13 @@
                 "pt": "msg",
                 "to": "payload",
                 "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "throttled",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -3315,11 +3708,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 460,
-        "y": 860,
+        "x": 500,
+        "y": 1160,
         "wires": [
             [
-                "e70c5a3209af48c2"
+                "e70c5a3209af48c2",
+                "bb07f097680a47a0"
             ]
         ]
     },
@@ -3336,6 +3730,13 @@
                 "pt": "msg",
                 "to": "payload",
                 "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "softTempLimit",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -3343,11 +3744,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 480,
-        "y": 900,
+        "x": 520,
+        "y": 1240,
         "wires": [
             [
-                "e3619f424091ed7e"
+                "e3619f424091ed7e",
+                "5f1f898ed52dec33"
             ]
         ],
         "info": "Over-temperature occurs at temperatures above 85 degrees Celsius. In that case the Raspberry will be throttled.\r\n"
@@ -3372,8 +3774,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 500,
-        "y": 940,
+        "x": 540,
+        "y": 1400,
         "wires": [
             [
                 "67ed8398eeda1a0c"
@@ -3400,8 +3802,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 980,
+        "x": 560,
+        "y": 1440,
         "wires": [
             [
                 "7d06f07bb8eb094b"
@@ -3428,8 +3830,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 490,
-        "y": 1020,
+        "x": 530,
+        "y": 1480,
         "wires": [
             [
                 "db47153659f7ce19"
@@ -3456,8 +3858,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 510,
-        "y": 1060,
+        "x": 550,
+        "y": 1520,
         "wires": [
             [
                 "b0e9ec154e6a3731"
@@ -3474,12 +3876,12 @@
         "width": 2,
         "height": 2,
         "name": "Under Voltage",
-        "label": "<div text-align:\"center\">Under Voltage",
+        "label": "Under Voltage",
         "format": "",
         "layout": "col-center",
         "className": "",
-        "x": 920,
-        "y": 780,
+        "x": 960,
+        "y": 1000,
         "wires": [],
         "info": "Under-voltage occurs when voltage drops below 4.63V. In that case the Raspberry will be throttled.\r\n"
     },
@@ -3489,8 +3891,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "name": "",
-        "x": 740,
-        "y": 780,
+        "x": 780,
+        "y": 1000,
         "wires": [
             [
                 "6c990431f2d66e88"
@@ -3503,16 +3905,16 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "group": "6582a58bf553f8ed",
-        "order": 39,
+        "order": 41,
         "width": 2,
         "height": 2,
-        "name": "Frequency Capped",
+        "name": "Freq. Capped",
         "label": "Freq. Capped",
         "format": "",
         "layout": "col-center",
         "className": "",
-        "x": 930,
-        "y": 820,
+        "x": 960,
+        "y": 1080,
         "wires": [],
         "info": "The arm frequency capping occurs at temperatures above 80 degrees Celsius.\r\n"
     },
@@ -3530,8 +3932,8 @@
         "format": "",
         "layout": "col-center",
         "className": "",
-        "x": 900,
-        "y": 860,
+        "x": 940,
+        "y": 1160,
         "wires": []
     },
     {
@@ -3540,16 +3942,16 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "group": "6582a58bf553f8ed",
-        "order": 41,
+        "order": 39,
         "width": 2,
         "height": 2,
-        "name": "Over Temperature",
+        "name": "Over Temp.",
         "label": "Over Temp.",
         "format": "",
         "layout": "col-center",
         "className": "",
-        "x": 930,
-        "y": 900,
+        "x": 950,
+        "y": 1240,
         "wires": [],
         "info": "Over-temperature occurs at temperatures above 85 degrees Celsius. In that case the Raspberry will be throttled.\r\n"
     },
@@ -3559,7 +3961,7 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "group": "6582a58bf553f8ed",
-        "order": 46,
+        "order": 54,
         "width": 2,
         "height": 2,
         "name": "Under Voltage Ocurred",
@@ -3567,8 +3969,8 @@
         "format": "",
         "layout": "col-center",
         "className": "",
-        "x": 940,
-        "y": 940,
+        "x": 980,
+        "y": 1400,
         "wires": []
     },
     {
@@ -3577,7 +3979,7 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "group": "6582a58bf553f8ed",
-        "order": 47,
+        "order": 57,
         "width": 2,
         "height": 2,
         "name": "Frequency Capped Ocurred",
@@ -3585,8 +3987,8 @@
         "format": "",
         "layout": "col-center",
         "className": "",
-        "x": 960,
-        "y": 980,
+        "x": 1000,
+        "y": 1440,
         "wires": []
     },
     {
@@ -3595,7 +3997,7 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "group": "6582a58bf553f8ed",
-        "order": 48,
+        "order": 56,
         "width": 2,
         "height": 2,
         "name": "Throttled Ocurred",
@@ -3603,8 +4005,8 @@
         "format": "",
         "layout": "col-center",
         "className": "",
-        "x": 930,
-        "y": 1020,
+        "x": 970,
+        "y": 1480,
         "wires": []
     },
     {
@@ -3613,7 +4015,7 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "group": "6582a58bf553f8ed",
-        "order": 49,
+        "order": 55,
         "width": 2,
         "height": 2,
         "name": "Over Temperature Ocurred",
@@ -3621,8 +4023,8 @@
         "format": "",
         "layout": "col-center",
         "className": "",
-        "x": 960,
-        "y": 1060,
+        "x": 1000,
+        "y": 1520,
         "wires": []
     },
     {
@@ -3631,8 +4033,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "name": "",
-        "x": 740,
-        "y": 820,
+        "x": 780,
+        "y": 1080,
         "wires": [
             [
                 "bb7353c2ce699c2b"
@@ -3645,8 +4047,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "name": "",
-        "x": 740,
-        "y": 860,
+        "x": 780,
+        "y": 1160,
         "wires": [
             [
                 "e9e6cc6795c71e46"
@@ -3659,8 +4061,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "name": "",
-        "x": 740,
-        "y": 900,
+        "x": 780,
+        "y": 1240,
         "wires": [
             [
                 "154fb0483eb5f50c"
@@ -3673,8 +4075,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "name": "",
-        "x": 740,
-        "y": 940,
+        "x": 780,
+        "y": 1400,
         "wires": [
             [
                 "251d1d863f5e2703"
@@ -3687,8 +4089,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "name": "",
-        "x": 740,
-        "y": 980,
+        "x": 780,
+        "y": 1440,
         "wires": [
             [
                 "86fc17e03564067e"
@@ -3701,8 +4103,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "name": "",
-        "x": 740,
-        "y": 1020,
+        "x": 780,
+        "y": 1480,
         "wires": [
             [
                 "f3a93ef62d4ccad0"
@@ -3715,8 +4117,8 @@
         "z": "c3d0a05c4b8ac63b",
         "g": "b4a6a6c3a53a77d7",
         "name": "",
-        "x": 740,
-        "y": 1060,
+        "x": 780,
+        "y": 1520,
         "wires": [
             [
                 "b0020c5e54929191"
@@ -3735,8 +4137,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 480,
-        "y": 620,
+        "x": 520,
+        "y": 840,
         "wires": [
             [
                 "1c3f7fe12a2ba1e7"
@@ -3752,8 +4154,8 @@
         "links": [
             "c86ce3cbad674b30"
         ],
-        "x": 95,
-        "y": 280,
+        "x": 135,
+        "y": 500,
         "wires": [
             [
                 "55d1b52a235d7341",
@@ -3766,179 +4168,6 @@
             ]
         ],
         "icon": "font-awesome/fa-clock-o"
-    },
-    {
-        "id": "5eb722e260f4dbcd",
-        "type": "ui_text",
-        "z": "c3d0a05c4b8ac63b",
-        "g": "0e37023efcbf72ea",
-        "group": "d90693ead75ad9b6",
-        "order": 7,
-        "width": 2,
-        "height": 1,
-        "name": "USB 2.0 Status",
-        "label": "<i class=\"fa fa-usb fa-lg\" title=\"USB 2.0 Ports Status\"></i>",
-        "format": "2.0",
-        "layout": "col-center",
-        "className": "",
-        "x": 740,
-        "y": 2200,
-        "wires": []
-    },
-    {
-        "id": "1a30acad9dbacdce",
-        "type": "ui_text",
-        "z": "c3d0a05c4b8ac63b",
-        "g": "0e37023efcbf72ea",
-        "group": "d90693ead75ad9b6",
-        "order": 8,
-        "width": 2,
-        "height": 1,
-        "name": "USB 3.0 Status",
-        "label": "<i class=\"fa fa-usb fa-lg\" title=\"USB 3.0 Ports Status\"></i>",
-        "format": "3.0",
-        "layout": "col-center",
-        "className": "",
-        "x": 740,
-        "y": 2240,
-        "wires": []
-    },
-    {
-        "id": "5e21ab325222cbad",
-        "type": "function",
-        "z": "c3d0a05c4b8ac63b",
-        "g": "0e37023efcbf72ea",
-        "name": "get_hubs_status",
-        "func": "var usb2 = {payload:\"\",topic:\"USB 2.0\",className: \"greyback\"};\nvar usb3 = {payload:\"\",topic:\"USB 3.0\",className: \"greyback\"};\nvar string = msg.payload\nconst index1 = string.indexOf(\"\\n\",0)\nusb3.payload = string.slice(0,index1)\nusb2.payload = string.slice(index1+1,-1)\n\nif(usb3.payload == \"power\"){usb3.className = \"green\"}\nif(usb2.payload == \"power\"){usb2.className = \"green\"}\n\nreturn [usb2, usb3]",
-        "outputs": 2,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 540,
-        "y": 2220,
-        "wires": [
-            [
-                "5eb722e260f4dbcd"
-            ],
-            [
-                "1a30acad9dbacdce"
-            ]
-        ]
-    },
-    {
-        "id": "018555d80f7d9547",
-        "type": "ui_text",
-        "z": "c3d0a05c4b8ac63b",
-        "g": "95b974680d37559d",
-        "group": "d90693ead75ad9b6",
-        "order": 11,
-        "width": 6,
-        "height": 1,
-        "name": "Raspberry Pi Power Off",
-        "label": "<h3>Raspberry Pi Power Off",
-        "format": "",
-        "layout": "col-center",
-        "className": "",
-        "x": 190,
-        "y": 2420,
-        "wires": [],
-        "info": "<h1> {{msg.payload | uppercase}} </h1>"
-    },
-    {
-        "id": "3bc1537c3343d03d",
-        "type": "exec",
-        "z": "c3d0a05c4b8ac63b",
-        "g": "95b974680d37559d",
-        "command": "sudo shutdown -h",
-        "addpay": "",
-        "append": "now",
-        "useSpawn": "false",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "Shutdown",
-        "x": 580,
-        "y": 2540,
-        "wires": [
-            [],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "322cb3fcd96bc97f",
-        "type": "switch",
-        "z": "c3d0a05c4b8ac63b",
-        "g": "95b974680d37559d",
-        "name": "If Ok",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "Ok",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 450,
-        "y": 2540,
-        "wires": [
-            [
-                "3bc1537c3343d03d"
-            ]
-        ]
-    },
-    {
-        "id": "23359a0e7d26a17a",
-        "type": "ui_toast",
-        "z": "c3d0a05c4b8ac63b",
-        "g": "95b974680d37559d",
-        "position": "dialog",
-        "displayTime": "5",
-        "highlight": "",
-        "sendall": true,
-        "outputs": 1,
-        "ok": "Ok",
-        "cancel": "Cancel",
-        "raw": true,
-        "className": "",
-        "topic": "",
-        "name": "Are You Sure?",
-        "x": 300,
-        "y": 2540,
-        "wires": [
-            [
-                "322cb3fcd96bc97f"
-            ]
-        ]
-    },
-    {
-        "id": "9fe80ac855b6f0a5",
-        "type": "exec",
-        "z": "c3d0a05c4b8ac63b",
-        "g": "0e37023efcbf72ea",
-        "command": "uhubctl -l 2 -a off; sudo  udevadm trigger --action=remove /sys/bus/usb/devices/2-1; sudo  udevadm trigger --action=remove /sys/bus/usb/devices/2-2; sudo  udevadm trigger --action=remove /sys/bus/usb/devices/1-1",
-        "addpay": "",
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "USB Power Off",
-        "x": 300,
-        "y": 2280,
-        "wires": [
-            [
-                "9549275c967ed354"
-            ],
-            [],
-            []
-        ],
-        "info": "Send on/off command to uhubctl"
     },
     {
         "id": "49444f4a31e2db92",
@@ -3958,8 +4187,8 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 1,
-        "x": 250,
-        "y": 740,
+        "x": 270,
+        "y": 960,
         "wires": [
             [
                 "56233ae84f10daf0",
@@ -3980,8 +4209,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 460,
-        "y": 740,
+        "x": 500,
+        "y": 960,
         "wires": []
     },
     {
@@ -3991,8 +4220,166 @@
         "g": "b4a6a6c3a53a77d7",
         "name": "ToDo",
         "info": "Analizar si no es merjor retener esta alarmas y agregar un reset o bien en lugar de las alarmas \"ocurred\" por defecto mostrar la retenidas con un reset.",
-        "x": 1080,
-        "y": 780,
+        "x": 1210,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "c19399d8000af487",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "group": "6582a58bf553f8ed",
+        "order": 46,
+        "width": 2,
+        "height": 2,
+        "name": "Under Voltage Latch",
+        "label": "Under Voltage Latch",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "x": 980,
+        "y": 1040,
+        "wires": [],
+        "info": "Under-voltage occurs when voltage drops below 4.63V. In that case the Raspberry will be throttled.\r\n"
+    },
+    {
+        "id": "6d82860e3a6a5c49",
+        "type": "subflow:d416c5ded7cb052a",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "",
+        "x": 780,
+        "y": 1040,
+        "wires": [
+            [
+                "c19399d8000af487"
+            ]
+        ]
+    },
+    {
+        "id": "3495c587de8fa044",
+        "type": "ui_button",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "Alarms Reset",
+        "group": "6582a58bf553f8ed",
+        "order": 59,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Alarms Reset",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "reset",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 280,
+        "y": 1060,
+        "wires": [
+            [
+                "0036fdeebe588a3f"
+            ]
+        ]
+    },
+    {
+        "id": "0036fdeebe588a3f",
+        "type": "function",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "Alarms Reset",
+        "func": "global.set(\"alarm_underVoltage\",false);\nglobal.set(\"alarm_frequencyCapped\",false);\nglobal.set(\"alarm_throttled\",false);\nglobal.set(\"alarm_softTempLimit\",false);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.set(\"alarm_underVoltage\",false);\nglobal.set(\"alarm_frequencyCapped\",false);\nglobal.set(\"alarm_throttled\",false);\nglobal.set(\"alarm_softTempLimit\",false);\n//global.set(\"alarm-\",false);\n",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8b34ce9a182ddaa1",
+        "type": "subflow:557ad53c603ba1b5",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "",
+        "x": 590,
+        "y": 1040,
+        "wires": [
+            [
+                "6d82860e3a6a5c49",
+                "5117079514f68b3b"
+            ]
+        ]
+    },
+    {
+        "id": "9470ab257160ae2f",
+        "type": "ui_text",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "group": "6582a58bf553f8ed",
+        "order": 48,
+        "width": 2,
+        "height": 2,
+        "name": "Throttled Latch",
+        "label": "Throttled Latch",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "x": 960,
+        "y": 1200,
+        "wires": [],
+        "info": "Under-voltage occurs when voltage drops below 4.63V. In that case the Raspberry will be throttled.\r\n"
+    },
+    {
+        "id": "562abf43b576dcb5",
+        "type": "subflow:d416c5ded7cb052a",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "",
+        "x": 780,
+        "y": 1200,
+        "wires": [
+            [
+                "9470ab257160ae2f"
+            ]
+        ]
+    },
+    {
+        "id": "bb07f097680a47a0",
+        "type": "subflow:557ad53c603ba1b5",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "x": 590,
+        "y": 1200,
+        "wires": [
+            [
+                "562abf43b576dcb5"
+            ]
+        ]
+    },
+    {
+        "id": "5117079514f68b3b",
+        "type": "debug",
+        "z": "c3d0a05c4b8ac63b",
+        "g": "b4a6a6c3a53a77d7",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 960,
         "wires": []
     }
 ]
