@@ -1928,10 +1928,10 @@
         "protocol": "Automatic",
         "mode": "triggered",
         "name": "",
-        "host": "192.168.0.111",
+        "host": "192.168.68.68",
         "timer": "20",
         "inputs": 1,
-        "x": 430,
+        "x": 440,
         "y": 2100,
         "wires": [
             [
